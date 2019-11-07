@@ -8,7 +8,11 @@ Prerequisites for the installation
 *  
 
 ## Stage 1
-
+### Preparing the jumpbox/bastion
+ The following packages need to be installed on the bastion host - 
+ * AWS CLI
+	 * This can be achived by the following command 
+	 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTI4NDg3MF19
+eyJoaXN0b3J5IjpbMTAwMjY1OTI4NF19
 -->
