@@ -86,12 +86,12 @@ vpc_cidr           = "10.0.0.0/16"
 -   availability_zones:  **(required)**  List of AZs you want to deploy to
 -   dns_suffix:  **(required)**  Domain to add environment subdomain to
 -   vpc_cidr:  **(default: 10.0.0.0/16)**  Internal CIDR block for the AWS VPC.
--   use_route53:  **(default: true)**  Controls whether or not Route53 DNS resources are created.
--   use_ssh_routes:  **(default: true)**  Enable ssh routing
--   use_tcp_routes:  **(default: true)**  Controls whether or not tcp routing is enabled
+-   rds_instance_count: **(default:0)**
+- 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTcyMjk5OSwtOTgxNDU1MjAsMTcyNT
-YxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAx
-MzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLT
-EwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbODAxNDY2MDM3LC05ODE0NTUyMCwxNzI1Nj
+E5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEz
+OCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMT
+AxNDY2MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF19
 -->
