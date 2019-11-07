@@ -28,8 +28,8 @@ Prerequisites for the installation
 	sudo mv terraform /usr/local/bin/terraform
 	```
 * OM Cli
-	* Download the latest version of OpsMan CLI  - om cli (v
+	* Download the latest version of OpsMan CLI  - om cli (v4.2.1 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NDc5OTc3NCw1OTEwMDY0OSwtMTc2Nz
-gzODQ2NF19
+eyJoaXN0b3J5IjpbLTEzOTI5MTk1NTksNTkxMDA2NDksLTE3Nj
+c4Mzg0NjRdfQ==
 -->
