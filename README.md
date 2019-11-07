@@ -5,7 +5,7 @@ Prerequisites for the installation
 
 * Access to the AWS account. 
 *  The following packages installed on the bastion host
-	* jq, wget, 
+	* jq, wget, ruby-full, go-devel
 *  
 
 ## Stage 1
@@ -29,6 +29,6 @@ Prerequisites for the installation
 	```
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTA2NjQyMCw1OTEwMDY0OSwtMTc2Nz
-gzODQ2NF19
+eyJoaXN0b3J5IjpbLTIxMDMxODM5NzUsNTkxMDA2NDksLTE3Nj
+c4Mzg0NjRdfQ==
 -->
