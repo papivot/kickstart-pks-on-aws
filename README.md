@@ -18,7 +18,8 @@ Prerequisites for the installation
 	```console
 	sudo apt install jq
 	```
-	
+* Terraform 
+	* Download the latyest
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MjYwMTUzMywtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbMjEzMDY1MTY2LC0xNzY3ODM4NDY0XX0=
 -->
