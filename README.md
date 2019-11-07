@@ -66,9 +66,10 @@ Download the `paving-pks` git repo.
 git clone https://github.com/pivotal/paving-pks.git
 cd aws/examples/open-network
 ```
-Within the directory, create 
+Within the directory, create a file called `terraform.tfvars` with values simil
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OT
-MzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2
-MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbLTI3MzQwNzEwMiwtMTYxNzA4MDEzMCwxNj
+cwODMwMTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5
+MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3ODM4NDY0XX
+0=
 -->
