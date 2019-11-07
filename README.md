@@ -90,10 +90,17 @@ vpc_cidr           = "10.0.0.0/16"
 -   ops_manager_ami: **(optional)** Ops Manager AMI, get the right AMI according to your region from the AWS guide downloaded from [Pivotal Network](https://network.pivotal.io/products/ops-manager) (if set to `""` no Ops Manager VM will be created)
 -  rds_instance_count: **(default: 0)** Whether or not you would like an RDS for your deployment
 
+Once the file has been updates, deploy the environment using terraform. 
+
+```console
+terraform init
+terraform plan -out=plan
+terraform apply plan
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMjE2NTI1NCwtODk4MDIxMjUxLC0xMz
-IwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3
-NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwyMT
-I2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAw
-NjQ5LC0xNzY3ODM4NDY0XX0=
+eyJoaXN0b3J5IjpbLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMT
+MyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkz
+NzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMj
+EyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEw
+MDY0OSwtMTc2NzgzODQ2NF19
 -->
