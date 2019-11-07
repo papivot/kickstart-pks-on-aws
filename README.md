@@ -107,10 +107,12 @@ The `terraform.tfstate` and `output.tf` file contains the required outputs from 
 * The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com.
 *  Access the OpsMan UI, accept the certificate warnings and proceed. 
 * Select `Internal Authentication` when asked to select the autoentication method. 
-* 
+* Enter the values for `Username`, `Password`, `Password confirmation`, `Decryption Password`, `Decryption Password confirmation`
+* If using Proxy, enter the proxy server specific configurations. 
+* Acc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDA3OTM2MywtMTc5MTA2MTU3MywtOD
+eyJoaXN0b3J5IjpbMTYxMDgxMTY3MiwtMTc5MTA2MTU3MywtOD
 k4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2
 MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LD
 Y5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0
