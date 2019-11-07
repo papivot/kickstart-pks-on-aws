@@ -58,9 +58,10 @@ Prerequisites for the installation
 	sudo mv texplate_linux_amd64 /usr/local/bin/texplate
 	```
 
-# Stage 
+## Stage 2
+### Setting up the plumbing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTYyMDA4Niw2OTMzNzE1MDgsMjEyNj
-A3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0
-OSwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbMTczNjY5NDU4LDY5MzM3MTUwOCwyMTI2MD
+cwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5
+LC0xNzY3ODM4NDY0XX0=
 -->
