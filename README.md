@@ -4,7 +4,8 @@ This document leverages a Ubuntu jumpbox/bastion host to deploy `PKS on AWS`. Th
 Prerequisites for the installation
 
 * Access to the AWS account. 
-*  
+*  The following packages installed on the bastion host
+	* jq, wget, 
 *  
 
 ## Stage 1
@@ -28,5 +29,6 @@ Prerequisites for the installation
 	```
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTU0MTA2NjQyMCw1OTEwMDY0OSwtMTc2Nz
+gzODQ2NF19
 -->
