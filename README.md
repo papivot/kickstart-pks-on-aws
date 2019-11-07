@@ -63,8 +63,12 @@ Prerequisites for the installation
 
 Download the `paving-pks` git repo.
 ```console
+git clone https://github.com/pivotal/paving-pks.git
+cd aws/examples/open-network
+```
+Within the directory, create 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc4NDU2ODgsMTY3MDgzMDEzOCw2OT
+eyJoaXN0b3J5IjpbLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OT
 MzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2
 MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF19
 -->
