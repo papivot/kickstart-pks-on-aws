@@ -85,18 +85,12 @@ vpc_cidr           = "10.0.0.0/16"
 -   region:  **(required)**  Region you want to deploy your resources to
 -   availability_zones:  **(required)**  List of AZs you want to deploy to
 -   dns_suffix:  **(required)**  Domain to add environment subdomain to
--   hosted_zone:  **(optional)**  Parent domain  _already_  managed by Route53. If specified, the DNS records will be added to this Route53 zone instead of a new zone.
--   ssl_cert:  **(optional)**  SSL certificate for HTTP load balancer configuration. Required unless  `ssl_ca_cert`  is specified.
--   ssl_private_key:  **(optional)**  Private key for above SSL certificate. Required unless  `ssl_ca_cert`  is specified.
--   ssl_ca_cert:  **(optional)**  SSL CA certificate used to generate self-signed HTTP load balancer certificate. Required unless  `ssl_cert`  is specified.
--   ssl_ca_private_key:  **(optional)**  Private key for above SSL CA certificate. Required unless  `ssl_cert`  is specified.
--   tags:  **(optional)**  A map of AWS tags that are applied to the created resources. By default, the following tags are set: Application = Cloud Foundry, Environment = $env_name
 -   vpc_cidr:  **(default: 10.0.0.0/16)**  Internal CIDR block for the AWS VPC.
 -   use_route53:  **(default: true)**  Controls whether or not Route53 DNS resources are created.
 -   use_ssh_routes:  **(default: true)**  Enable ssh routing
 -   use_tcp_routes:  **(default: true)**  Controls whether or not tcp routing is enabled
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzAzNzE0MSwtOTgxNDU1MjAsMTcyNT
+eyJoaXN0b3J5IjpbLTE0OTcyMjk5OSwtOTgxNDU1MjAsMTcyNT
 YxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAx
 MzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLT
 EwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
