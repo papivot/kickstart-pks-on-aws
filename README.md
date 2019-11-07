@@ -100,11 +100,14 @@ terraform apply plan
 
 This should deploy the Opsman VM and all the required AWS artifacts(networking/security groups, DNS etc) necessary to PKS environment. 
 
-The `terraform.tfstate` and `output.tf` file contains the required outputs from the terraform run. 
+The `terraform.tfstate` and `output.tf` file contains the required outputs from the terraform run.
 
-The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com
+Modify the DNS configurations, so that the OpsManager address is resolable on the network.  
+
+The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDcyMjc5MiwtMTc5MTA2MTU3MywtOD
+eyJoaXN0b3J5IjpbLTU4NDg5NzQ4NywtMTc5MTA2MTU3MywtOD
 k4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2
 MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LD
 Y5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0
