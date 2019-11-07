@@ -66,7 +66,7 @@ Download the `paving-pks` git repo. Contact the author, if you do not have acces
 git clone https://github.com/pivotal/paving-pks.git
 cd aws/examples/open-network
 ```
-Within the directory, create a file called `terraform.tfvars` with values specific to your environment - 
+Within the directory, create a variables file called `terraform.tfvars` with values specific to your environment - 
 
 ```
 env_name           = "subdomain"
@@ -91,9 +91,9 @@ vpc_cidr           = "10.0.0.0/16"
 -  rds_instance_count: **(default: 0)** Whether or not you would like an RDS for your deployment
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05OD
-E0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAx
-MzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMT
-YyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2Nzgz
-ODQ2NF19
+eyJoaXN0b3J5IjpbMTAyMjE2NTI1NCwtODk4MDIxMjUxLC0xMz
+IwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3
+NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwyMT
+I2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAw
+NjQ5LC0xNzY3ODM4NDY0XX0=
 -->
