@@ -48,7 +48,7 @@ Prerequisites for the installation
 	```
 * Texplate
 	* Install the CLI wrapper around Golang text/template - texplate cli and move to  /usr/local/bin
-	```shell
+	```console
 	mkdir -p $HOME/go/src/github.com/pivotal-cf
 	cd $HOME/go/src/github.com/pivotal-cf
 	git clone https://github.com/pivotal-cf/texplate.git
@@ -57,8 +57,10 @@ Prerequisites for the installation
 	cd ../out/
 	sudo mv texplate_linux_amd64 /usr/local/bin/texplate
 	```
+
+# Stage 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjE1MzQ2MCw2OTMzNzE1MDgsMjEyNj
+eyJoaXN0b3J5IjpbLTI2MTYyMDA4Niw2OTMzNzE1MDgsMjEyNj
 A3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0
 OSwtMTc2NzgzODQ2NF19
 -->
