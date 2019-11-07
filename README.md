@@ -87,11 +87,13 @@ vpc_cidr           = "10.0.0.0/16"
 -   dns_suffix:  **(required)**  Domain to add environment subdomain to
 -   vpc_cidr:  **(default: 10.0.0.0/16)**  Internal CIDR block for the AWS VPC.
 -   rds_instance_count: **(default:0)**
--   ops_manager_ami: 
+-   ops_manager_ami: **(optional)** Ops Manager AMI, get the right AMI according to your region from the AWS guide downloaded from [Pivotal Network](https://network.pivotal.io/products/ops-manager) (if set to `""` no Ops Manager VM will be created)
+-  rds_instance_count: **(default: 0)** Whether or not you would like an RDS for your deployment
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNT
-YxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAx
-MzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLT
-EwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05OD
+E0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAx
+MzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMT
+YyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2Nzgz
+ODQ2NF19
 -->
