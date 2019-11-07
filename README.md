@@ -18,6 +18,7 @@ Prerequisites for the installation
 	```console
 	sudo apt install jq
 	```
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTg1MjEzOF19
+eyJoaXN0b3J5IjpbLTE3Njc4Mzg0NjRdfQ==
 -->
