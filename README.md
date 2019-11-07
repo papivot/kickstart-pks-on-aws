@@ -34,8 +34,10 @@ Prerequisites for the installation
 	chmod +x om-linux-4.2.1
 	sudo mv om-linux-4.2.1 /usr/local/bin/om
 	```
+* Pivnet Cli
+	* Download the **latest** version of Pivotal Network  CLI  - pivnet cli (v4.2.1 in this example) and move to /usr/local/bin
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Nj
-c4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTE5ODY3NTE3NjEsLTEwMTQ2NjAwMTMsNT
+kxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
