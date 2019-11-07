@@ -11,10 +11,13 @@ Prerequisites for the installation
 ### Preparing the jumpbox/bastion
  The following packages need to be installed on the bastion host - 
  * AWS CLI
- ```console
+	```console
 	sudo apt install awscli
 	```
 * JQ
+	```console
+	sudo apt install jq
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODEzMTQ1ODFdfQ==
+eyJoaXN0b3J5IjpbMTczOTg1MjEzOF19
 -->
