@@ -22,9 +22,11 @@ Prerequisites for the installation
 	* Download the latest version of Terraform (v0.12.13 in this example)
 	```console
 	wget https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_386.zip
-	
-	
+	unzip terraform*.zip
+	chmod +x terraform
+	sudo mv terraform /usr/local/bin/terraform
 	```
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyOTI0MjEzMiwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
