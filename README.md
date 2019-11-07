@@ -60,8 +60,11 @@ Prerequisites for the installation
 
 ## Stage 2
 ### Setting up the plumbing and installing OpsMan
+
+Download the `paving-pks` git repo.
+```console
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNj
-A3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0
-OSwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbLTExMTc4NDU2ODgsMTY3MDgzMDEzOCw2OT
+MzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2
+MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF19
 -->
