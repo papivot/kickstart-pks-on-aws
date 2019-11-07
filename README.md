@@ -98,9 +98,11 @@ terraform plan -out=plan
 terraform apply plan
 ```
 
+This should deploy the Opsman VM and all the required AWS artifacts(networking/security groups, DNS etc) necessary to PKS environment. 
 
+The 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDM3NzYyMywtMTc5MTA2MTU3MywtOD
+eyJoaXN0b3J5IjpbLTEzNzk1OTEwNCwtMTc5MTA2MTU3MywtOD
 k4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2
 MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LD
 Y5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0
