@@ -38,9 +38,11 @@ Prerequisites for the installation
 	* Download the **latest** version of CLI to interact with Pivotal Network  - pivnet cli (v0.0.72 in this example) and move to /usr/local/bin
 	```console
 	wget https://github.com/pivotal-cf/pivnet-cli/releases/download/v0.0.72/pivnet-linux-amd64-0.0.72
-	
+	chmod +x pivnet-linux-amd64-0.0.72
+	sudo mv pivnet-linux-amd64-0.0.72 /usr/local/bin/pivnet
 	```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDc1MzY1MDgsLTEwMTQ2NjAwMTMsNT
-kxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbMTA3NDgyODA3NCwtMTAxNDY2MDAxMyw1OT
+EwMDY0OSwtMTc2NzgzODQ2NF19
 -->
