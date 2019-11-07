@@ -44,9 +44,9 @@ Prerequisites for the installation
 * UAA Cli
 	* Install the latest Cloudfoundry UAA Cli - uaac 
 	```console
-	
+	sudo gem install cf-uaac
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNT
-kxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMT
+AxNDY2MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF19
 -->
