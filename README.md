@@ -59,9 +59,9 @@ Prerequisites for the installation
 	```
 
 ## Stage 2
-### Setting up the plumbing
+### Setting up the plumbing and installing OpsMan
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjY5NDU4LDY5MzM3MTUwOCwyMTI2MD
-cwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5
-LC0xNzY3ODM4NDY0XX0=
+eyJoaXN0b3J5IjpbMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNj
+A3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0
+OSwtMTc2NzgzODQ2NF19
 -->
