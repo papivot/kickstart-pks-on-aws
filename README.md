@@ -1,7 +1,10 @@
 # Installing PKS on AWS
-This document leverages a Ubuntu jumpbox/bastion host to deploy AWS on PKS. This is for demo purpose only and not intended for production use. Please use Concourse and Platform Automation for deploying in a more formal environment. 
+This document leverages a Ubuntu jumpbox/bastion host to deploy `PKS on AWS`. This is for demo/education purpose only and not intended for production use. Please use Concourse and Platform Automation for deploying in a more formal environment. 
 
-Stage 
+Prerequisites  
+
+## Stage 1
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjcxODI2NV19
+eyJoaXN0b3J5IjpbMzk2NTg4NTgwXX0=
 -->
