@@ -102,12 +102,13 @@ This should deploy the Opsman VM and all the required AWS artifacts(networking/s
 
 The `terraform.tfstate` and `output.tf` file contains the required outputs from the terraform run.
 
-Modify the DNS configurations, so that the OpsManager address is resolable on the network.  
+* Modify the DNS configurations, so that the newly created network and DNS domain address is resolvable on the network.  
 
-The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com.
+* The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com.
+*  Access the OpsMan UI and
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NDg5NzQ4NywtMTc5MTA2MTU3MywtOD
+eyJoaXN0b3J5IjpbLTc4NDgzMjU1MSwtMTc5MTA2MTU3MywtOD
 k4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2
 MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LD
 Y5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0
