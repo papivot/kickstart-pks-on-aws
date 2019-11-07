@@ -35,9 +35,12 @@ Prerequisites for the installation
 	sudo mv om-linux-4.2.1 /usr/local/bin/om
 	```
 * Pivnet Cli
-	* Download the **latest** version of Pivotal Network  CLI  - pivnet cli (v4.2.1 in this example) and move to /usr/local/bin
+	* Download the **latest** version of CLI to interact with Pivotal Network  - pivnet cli (v0.0.72 in this example) and move to /usr/local/bin
+	```console
+	wget https://github.com/pivotal-cf/pivnet-cli/releases/download/v0.0.72/pivnet-linux-amd64-0.0.72
 	
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODY3NTE3NjEsLTEwMTQ2NjAwMTMsNT
+eyJoaXN0b3J5IjpbLTEyNDc1MzY1MDgsLTEwMTQ2NjAwMTMsNT
 kxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
