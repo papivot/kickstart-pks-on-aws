@@ -41,8 +41,12 @@ Prerequisites for the installation
 	chmod +x pivnet-linux-amd64-0.0.72
 	sudo mv pivnet-linux-amd64-0.0.72 /usr/local/bin/pivnet
 	```
-
+* UAA Cli
+	* Install the latest Cloudfoundry UAA Cli - uaac 
+	```console
+	
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDgyODA3NCwtMTAxNDY2MDAxMyw1OT
-EwMDY0OSwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbLTE2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNT
+kxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
