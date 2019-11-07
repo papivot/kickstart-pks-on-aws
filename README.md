@@ -61,7 +61,7 @@ Prerequisites for the installation
 ## Stage 2
 ### Setting up the plumbing and installing OpsMan
 
-Download the `paving-pks` git repo.
+Download the `paving-pks` git repo. Contact the author, if you do not have access to the repo. 
 ```console
 git clone https://github.com/pivotal/paving-pks.git
 cd aws/examples/open-network
@@ -79,9 +79,10 @@ rds_instance_count = 0
 dns_suffix         = "domainname.com"
 vpc_cidr           = "10.0.0.0/16"
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNj
-cwODMwMTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5
-MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3ODM4NDY0XX
-0=
+eyJoaXN0b3J5IjpbMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNj
+E3MDgwMTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0
+NjAsLTE2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLT
+E3Njc4Mzg0NjRdfQ==
 -->
