@@ -47,8 +47,9 @@ Prerequisites for the installation
 	sudo gem install cf-uaac
 	```
 * Texplate
+	* Install the CLI wrapper around Golang text/template - texplate cli and move to  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODc4NTAxLDY5MzM3MTUwOCwyMTI2MD
+eyJoaXN0b3J5IjpbNzY3MzkwODU0LDY5MzM3MTUwOCwyMTI2MD
 cwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5
 LC0xNzY3ODM4NDY0XX0=
 -->
