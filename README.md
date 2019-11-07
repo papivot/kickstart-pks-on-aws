@@ -32,9 +32,9 @@ Prerequisites for the installation
 	```console
 	wget https://github.com/pivotal-cf/om/releases/download/4.2.1/om-linux-4.2.1
 	chmod +x om-linux-4.2.1
-	sudo mv  /usr/local/bin/terraform
+	sudo mv om-linux-4.2.1 /usr/local/bin/om
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDM4MzIxNiw1OTEwMDY0OSwtMTc2Nz
+eyJoaXN0b3J5IjpbLTQwNDcwODkzMSw1OTEwMDY0OSwtMTc2Nz
 gzODQ2NF19
 -->
