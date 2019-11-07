@@ -19,20 +19,17 @@ Prerequisites for the installation
 	```console
 	sudo apt install awscli
 	```
-* JQ
-	```console
-	sudo apt install jq
-	```
 * Terraform 
-	* Download the latest version of Terraform (v0.12.13 in this example)
+	* Download the latest version of Terraform (v0.12.13 in this example) and move to /usr/local/bin
 	```console
 	wget https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_386.zip
 	unzip terraform*.zip
 	chmod +x terraform
 	sudo mv terraform /usr/local/bin/terraform
 	```
-* 
+* OM Cli
+	* Download the latest version of OpsMan CLI  - om cli (v
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NzYyODM4MCw1OTEwMDY0OSwtMTc2Nz
+eyJoaXN0b3J5IjpbMTM5NDc5OTc3NCw1OTEwMDY0OSwtMTc2Nz
 gzODQ2NF19
 -->
