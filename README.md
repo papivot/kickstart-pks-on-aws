@@ -20,7 +20,7 @@ Prerequisites for the installation
 	sudo apt install awscli
 	```
 * Terraform 
-	* Download the latest version of Terraform (v0.12.13 in this example) and move to /usr/local/bin
+	* Download the **latest** version of Terraform (v0.12.13 in this example) and move to /usr/local/bin
 	```console
 	wget https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_386.zip
 	unzip terraform*.zip
@@ -28,13 +28,14 @@ Prerequisites for the installation
 	sudo mv terraform /usr/local/bin/terraform
 	```
 * OM Cli
-	* Download the latest version of OpsMan CLI  - om cli (v4.2.1 in this example) and move to /usr/local/bin
+	* Download the **latest** version of OpsMan CLI  - om cli (v4.2.1 in this example) and move to /usr/local/bin
 	```console
 	wget https://github.com/pivotal-cf/om/releases/download/4.2.1/om-linux-4.2.1
 	chmod +x om-linux-4.2.1
 	sudo mv om-linux-4.2.1 /usr/local/bin/om
 	```
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDcwODkzMSw1OTEwMDY0OSwtMTc2Nz
-gzODQ2NF19
+eyJoaXN0b3J5IjpbLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Nj
+c4Mzg0NjRdfQ==
 -->
