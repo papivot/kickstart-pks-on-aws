@@ -47,9 +47,18 @@ Prerequisites for the installation
 	sudo gem install cf-uaac
 	```
 * Texplate
-	* Install the CLI wrapper around Golang text/template - texplate cli and move to  
+	* Install the CLI wrapper around Golang text/template - texplate cli and move to  /usr/local/bin
+	```console
+	mkdir -p $HOME/go/src/github.com/pivotal-cf
+	cd $HOME/go/src/github.com/pivotal-cf
+	git clone https://github.com/pivotal-cf/texplate.git
+	cd texplate/scripts/
+	./build
+	cd ../out/
+	sudo mv texplate_linux_amd64 /usr/local/bin/texplate
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY3MzkwODU0LDY5MzM3MTUwOCwyMTI2MD
+eyJoaXN0b3J5IjpbNzg1MTE2NTI1LDY5MzM3MTUwOCwyMTI2MD
 cwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5
 LC0xNzY3ODM4NDY0XX0=
 -->
