@@ -87,11 +87,11 @@ vpc_cidr           = "10.0.0.0/16"
 -   dns_suffix:  **(required)**  Domain to add environment subdomain to
 -   vpc_cidr:  **(default: 10.0.0.0/16)**  Internal CIDR block for the AWS VPC.
 -   rds_instance_count: **(default:0)**
-- 
+-   ops_manager_ami: 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxNDY2MDM3LC05ODE0NTUyMCwxNzI1Nj
-E5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEz
-OCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMT
-AxNDY2MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNT
+YxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAx
+MzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLT
+EwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
