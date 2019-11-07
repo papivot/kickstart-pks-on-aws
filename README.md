@@ -100,11 +100,13 @@ terraform apply plan
 
 This should deploy the Opsman VM and all the required AWS artifacts(networking/security groups, DNS etc) necessary to PKS environment. 
 
-The 
+The `terraform.tfstate` and `output.tf` file contains the required outputs from the terraform run. 
+
+The opsman UI can be accessed in the browser at the following U
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzk1OTEwNCwtMTc5MTA2MTU3MywtOD
-k4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2
-MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LD
-Y5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0
-NjYwMDEzLDU5MTAwNjQ5LC0xNzY3ODM4NDY0XX0=
+eyJoaXN0b3J5IjpbODczMTM5ODIxLC0xNzkxMDYxNTczLC04OT
+gwMjEyNTEsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYz
+OCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgsNj
+kzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLTEwMTQ2
+NjAwMTMsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
