@@ -193,13 +193,7 @@ This should partially configure the tile with the output similar to this -
 ```shell
 configuring pivotal-container-service...
 setting up network
-finished setting up network
-setting properties
-finished setting properties
-applying resource configurations...
-finished applying resource configurations
-applying max in flight for the following jobs:
-syslog configuration is not provided, nothing to do here
+...
 applying errand configuration for the following errands:
 	smoke-tests
 could not execute "configure-product": configuration not complete.
@@ -222,13 +216,14 @@ grep pks_api_endpoint tf.output
 * Click `Generate`
 * Click `Save`
 
+Validate that all the remaining setting are completed and `green`. Once 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTA2NDc4OCwxNjEwNTMwMjM0LC0yMD
-E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
-MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
-EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
-ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5Nj
-M4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2
-OTMzNzE1MDhdfQ==
+eyJoaXN0b3J5IjpbLTE1MTA3NTI0OTYsMTYxMDUzMDIzNCwtMj
+AxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkw
+NjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMT
+ExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04
+OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOT
+YzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgs
+NjkzMzcxNTA4XX0=
 -->
