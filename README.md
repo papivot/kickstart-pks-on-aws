@@ -205,9 +205,11 @@ This is expected, as we did not provide the required certificates during Stage 1
 
 * Login to the OpsManager UI.
 * Click on the `Enterprise PKS` tile.  
-* Click 
+* Click on `Settings`
+* Click on `PKS API` [should be orange in color]
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjA1MDcxNTEsLTEwODI1OTU2NDAsLT
+eyJoaXN0b3J5IjpbLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLT
 IwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2
 NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNi
 wtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4
