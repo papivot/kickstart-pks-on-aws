@@ -121,11 +121,27 @@ jq -e -r '.outputs|map_values(.value)' terraform.tfstate > tf.output
 texplate execute ../../../ci/assets/aws/director-config.yml -f tf.output -o yaml > director-config.yml
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k configure-director --config director-config.yml
 ```
+
+this should produce an output similar to this - 
+
+```shell
+started configuring director options for bosh tile
+finished configuring director options for bosh tile
+started configuring availability zone options for bosh tile
+successfully fetched AZs, continuing
+finished configuring availability zone options for bosh tile
+started configuring network options for bosh tile
+finished configuring network options for bosh tile
+started configuring network assignment options for bosh tile
+finished configuring network assignment options for bosh tile
+started configuring resource options for bosh tile
+finished configuring resource options for bosh tile
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDg2MjM5LDU0NzUxMTExMSwxNDIyNj
-M2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUx
-LC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2Nz
-I1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUw
-OCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLD
-U5MTAwNjQ5LC0xNzY3ODM4NDY0XX0=
+eyJoaXN0b3J5IjpbLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMj
+YzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1
+MSwtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01Nj
+cyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OTMzNzE1
+MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMy
+w1OTEwMDY0OSwtMTc2NzgzODQ2NF19
 -->
