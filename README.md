@@ -90,7 +90,9 @@ vpc_cidr           = "10.0.0.0/16"
 -  rds_instance_count: **(default: 0)** Whether or not you would like an RDS for your deployment
 
 #### NOTE
-For the demo/POC purpose, we will not be deploying/using custom certificates. We will be leveraging self signed certificates. As a result, the following tweake
+For the demo/POC purpose, we will not be deploying/using custom certificates. We will be leveraging self signed certificates. As a result, the following tweaks need to be made to the a file in the git repo downloaded above. 
+
+
 
 Once the file has been updates, deploy the environment using terraform. 
 
@@ -231,7 +233,7 @@ om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password
 ```
 This takes a while (approx 10+ minutes) and the end result is a functioning PKS API Control plane.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODY3ODQ3MywxNjEwNTMwMjM0LC0yMD
+eyJoaXN0b3J5IjpbLTg3MzMxMjk3NywxNjEwNTMwMjM0LC0yMD
 E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
 MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
 EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
