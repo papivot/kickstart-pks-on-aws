@@ -10,7 +10,7 @@ Prerequisites for the installation
 	sudo apt install jq wget ruby-full go-devel
 	```
 
-*  
+*  Access to Pivotal Download
 
 ## Stage 1
 ### Preparing the jumpbox/bastion
@@ -211,13 +211,14 @@ grep pks_api_endpoint tf.output
 * Click on the `Enterprise PKS` tile.  
 * Click on `Settings`
 * Click on `PKS API` [should be orange in color]
-* In the `API Hostname (FQDN) *` field, provide the value captured for ` 
+* In the `API Hostname (FQDN) *` field, provide the value captured for `pks_api_endpoint` earlier. 
+*  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTYwMDUzNzgsLTIwMTgwNzE5MDIsLT
-EwODI1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUx
-MjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2OD
-Q4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0x
-MzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OT
-M3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwy
-MTI2MDcwNDYwXX0=
+eyJoaXN0b3J5IjpbMTkyOTQwMzczMSwtMjAxODA3MTkwMiwtMT
+A4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEy
+Mjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4ND
+gsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEz
+MjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mz
+c2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIx
+MjYwNzA0NjBdfQ==
 -->
