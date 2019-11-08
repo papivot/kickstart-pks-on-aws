@@ -61,7 +61,7 @@ Prerequisites for the installation
 ## Stage 2
 ### Setting up the plumbing and installing OpsMan
 
-Download the `paving-pks` git repo. Contact the author, if you do not have access to the repo. 
+Download the `paving-pks` git repo. Contact the author if you do not have access to the repo. 
 ```console
 git clone https://github.com/pivotal/paving-pks.git
 cd aws/examples/open-network
@@ -102,7 +102,7 @@ This should deploy the Opsman VM and all the required AWS artifacts(networking/s
 
 The `terraform.tfstate` and `output.tf` file contains the required outputs from the terraform run.
 
-* Modify the DNS configurations, so that the newly created network and DNS domain address is resolvable on the network.  
+* [IMPORTANT] Modify the DNS configurations, so that the newly created network and DNS domain address is resolvable on the network.  
 
 * The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com.
 *  Access the OpsMan UI, accept the certificate warnings and proceed. 
@@ -146,7 +146,7 @@ This takes a while (approx 10+ minutes) and the end result is a fully configured
 
 ### Installation of the PKS Control plane.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjg2NTE1OCwtNDU2NTkxMDc0LDU0Nz
+eyJoaXN0b3J5IjpbMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0Nz
 UxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3
 MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3Mj
 U2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMw
