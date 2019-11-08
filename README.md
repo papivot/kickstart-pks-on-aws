@@ -232,12 +232,18 @@ or
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k apply-changes
 ```
 This takes a while (approx 10+ minutes) and the end result is a functioning PKS API Control plane.
+
+## Stage 5
+
+### Configure PKS Control plane
+
+Once the PKS API VM has been installed and configured, we need to add credentials to the API 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzMxMjk3NywxNjEwNTMwMjM0LC0yMD
-E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
-MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
-EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
-ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5Nj
-M4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2
-OTMzNzE1MDhdfQ==
+eyJoaXN0b3J5IjpbLTIxMjM2NTMzMzgsLTg3MzMxMjk3NywxNj
+EwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAx
+OTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MT
+A3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3
+OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NT
+UyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAs
+MTY3MDgzMDEzOF19
 -->
