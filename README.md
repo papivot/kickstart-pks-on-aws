@@ -155,7 +155,7 @@ Click on the **i** next to the product text. Copy the `pivnet` cli command text 
 ```console
 pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=505925
 ```
-The PKS product file would be named simething similar to `pivotal-container-service-[version_#]-build.[build_#].pivotal`
+The PKS product file would be named similar to `pivotal-container-service-[version_#]-build.[build_#].pivotal`
 
 Similarly, copy the Linux specific PKS CLI and Kubectl CLI picnet cli command text and past it in the bastion shell. For example -
 
@@ -169,6 +169,7 @@ Find the link to the relevant stemcell in the Product Description tab and downlo
 ```console
 pivnet download-product-files --product-slug='stemcells-ubuntu-xenial' --release-version='315.81' --product-file-id=460228
 ```
+The stemcell file would be named similar to 
 
 Once these 4 files have been downloaded, the PKS Product file and the stemcell needs to be uploaded to the OpsManager,
 
@@ -176,10 +177,10 @@ This is done by the following commands -
 
 ```console
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k  upload-product -p [name_of_the_product_file]
-
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k upload-stemcell -s [name_of_stemcell_file]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg5MDI1MzgsMTUxMjI3NTQzMCwtND
+eyJoaXN0b3J5IjpbLTE5NTkxNjExODcsMTUxMjI3NTQzMCwtND
 U2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2Mjkz
 NiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLT
 k4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4
