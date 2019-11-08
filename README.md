@@ -137,11 +137,19 @@ finished configuring network assignment options for bosh tile
 started configuring resource options for bosh tile
 finished configuring resource options for bosh tile
 ```
+
+Upon successful configuration, the following changes need to be applies to create and configure the BOSH Director VM. This can be done by -
+
+```console
+om -t pcf.awscloud.navneetv.com -u admin -p Passw0rd -k apply-changes
+```
+
+This takes a while (approx 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMj
-YzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1
-MSwtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01Nj
-cyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OTMzNzE1
-MDgsMjEyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMy
-w1OTEwMDY0OSwtMTc2NzgzODQ2NF19
+eyJoaXN0b3J5IjpbLTU1NzQyMzMzNywtNDU2NTkxMDc0LDU0Nz
+UxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3
+MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3Mj
+U2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMw
+MTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC
+0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3ODM4NDY0XX0=
 -->
