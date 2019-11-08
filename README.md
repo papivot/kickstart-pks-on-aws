@@ -94,6 +94,8 @@ vpc_cidr           = "10.0.0.0/16"
 #### NOTE
 For the demo/POC purpose, we will not be deploying/using custom certificates. We will be leveraging self signed certificates. As a result, the following tweaks need to be made to the a file in the git repo downloaded above. 
 
+* Create a new file called `pks-config-new.yml` in the correct directory. 
+* Copy and paste the contents from the 
 
 
 Once the file has been updates, deploy the environment using terraform. 
@@ -309,11 +311,11 @@ terraform destroy
 
 This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU3OTc2MDM3LDMzMDkyNDE5MCw0ODIxMj
-YwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAy
-LC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LD
-E1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYz
-Njg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MS
-wtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01Njcy
-NTkzNzZdfQ==
+eyJoaXN0b3J5IjpbMTE3NzI2MjQzNSwzMzA5MjQxOTAsNDgyMT
+I2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkw
+MiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NS
+wxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2
+MzY4NDgsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNT
+EsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3
+MjU5Mzc2XX0=
 -->
