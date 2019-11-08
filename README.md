@@ -148,13 +148,17 @@ This takes a while (approx 10+ minutes) and the end result is a fully configured
 
 During this stage, the required product binaries(tiles) and associated stemcell are uploaded to OpsManager. Once done, the tile is configured and the changes applied.
 
-To upload the tile, sign in to https://network.pivotal.io. Once signed in, search for Pivotal Container Service. Select the appropriate version/release - for example - 1.5.1
+To upload the tile, sign in to https://network.pivotal.io. Once signed in, search for Pivotal Container Service. Select the appropriate version/release - for example - 1.5.1.
+
+Copy the `pivnet` cli command text and paste it in the bastion shell. For example - 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDI4NTc2OCwxNTEyMjc1NDMwLC00NT
-Y1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2
-LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOT
-gxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgw
-MTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLT
-E2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4
-Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbMjg4ODk5Njc5LDE1MTIyNzU0MzAsLTQ1Nj
+U5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYs
+LTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05OD
+E0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAx
+MzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMT
+YyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2Nzgz
+ODQ2NF19
 -->
