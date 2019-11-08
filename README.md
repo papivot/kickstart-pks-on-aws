@@ -93,7 +93,6 @@ vpc_cidr           = "10.0.0.0/16"
 
 #### NOTE
 For the demo/POC purpose, we will not be deploying/using custom certificates. We will be leveraging self signed certificates. As a result, the following tweaks need to be made to the a file in the git repo downloaded above. 
-
 * Create a new file called `pks-config-new.yml` in the correct directory. 
 * Copy and paste the contents from the file in the current Github repo [\[here\]](https://github.com/papivot/kickstart-pks-on-aws/blob/master/pks-config-new.yml)
 * Save the file content.
@@ -102,6 +101,7 @@ For the demo/POC purpose, we will not be deploying/using custom certificates. We
 cp -pav ../../../ci/assets/aws/pks-config.yml ../../../ci/assets/aws/pks-config-orig.yml
 cp pks-config-new.yml ../../../ci/assets/aws/pks-config.yml
 ``` 
+
 
 Once the file has been updates, deploy the environment using terraform. 
 
@@ -316,11 +316,11 @@ terraform destroy
 
 This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzYzNDMyMTEsMzMwOTI0MTkwLDQ4Mj
-EyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5
-MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOT
-UsMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIy
-NjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMj
-UxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2
-NzI1OTM3Nl19
+eyJoaXN0b3J5IjpbMTA4MzU2NjY0OSwzMzA5MjQxOTAsNDgyMT
+I2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkw
+MiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NS
+wxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2
+MzY4NDgsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNT
+EsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3
+MjU5Mzc2XX0=
 -->
