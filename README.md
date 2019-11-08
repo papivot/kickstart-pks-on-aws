@@ -181,12 +181,15 @@ om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k stage-product   -p pivotal-container-service -v [version_# e.g. 1.5.1-build.8]
 ```
 
+Similar to the BOSH Director, the PKS tile needs to be configured. The can be done similar to the BOSH Director by running the following commands - 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjMzNDMxLC0xOTA2MjMzMDk1LDE1MT
-IyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0
-OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMT
-MyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkz
-NzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMj
-EyNjA3MDQ2MCwtMTYyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEw
-MDY0OV19
+eyJoaXN0b3J5IjpbLTE3MTU4MTc1MzQsLTE5MDYyMzMwOTUsMT
+UxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2
+ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC
+0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1
+OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOC
+wyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5
+MTAwNjQ5XX0=
 -->
