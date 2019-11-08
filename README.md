@@ -111,10 +111,15 @@ The `terraform.tfstate` and `output.tf` file contains the required outputs from 
 * If using Proxy, enter the proxy server specific configurations. 
 * Accept the EULA and press `Setup Authentication`
 
+## Stage 3
+### BOSH Director configuration and installation
+
+Leveraging the `terraform.tfstate` file, the BOSH director is configured. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OT
-gwMjEyNTEsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYz
-OCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgsNj
-kzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLTEwMTQ2
-NjAwMTMsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OT
+EwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NTUy
+MCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMT
+Y3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0
+OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF
+19
 -->
