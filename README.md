@@ -9,7 +9,6 @@ Prerequisites for the installation
 	```console
 	sudo apt install jq wget ruby-full go-devel
 	```
-
 *  Access to Pivotal Download site - https://network.pivotal.io
 
 ## Stage 1
@@ -227,9 +226,9 @@ or
 ```console
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k apply-changes
 ```
-
+This takes a while (approx 10+ minutes) and the end result is a functioning PKS API Control plane.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODA3MTkwNCwxNjEwNTMwMjM0LC0yMD
+eyJoaXN0b3J5IjpbLTkxNzM0Mzc5OCwxNjEwNTMwMjM0LC0yMD
 E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
 MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
 EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
