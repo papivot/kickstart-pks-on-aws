@@ -161,7 +161,7 @@ pivnet download-product-files --product-slug='pivotal-container-service' --relea
 ```
 The PKS product file would be named similar to `pivotal-container-service-[version_#]-build.[build_#].pivotal`
 
-Similarly, copy the Linux specific PKS CLI and Kubectl CLI picnet cli command text and past it in the bastion shell. For example -
+Similarly, copy the Linux specific PKS CLI and Kubectl CLI pivnet cli command text and past it in the bastion shell. For example -
 
 ```console
 pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=496006 # For Linux specific PKS CLI
@@ -231,7 +231,7 @@ or
 ```console
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k apply-changes
 ```
-This takes a while (approx 10+ minutes) and the end result is a functioning PKS API Control plane.
+This takes a while (approx. 10+ minutes) and the end result is a functioning PKS API Control plane.
 
 ## Stage 5
 
@@ -266,7 +266,7 @@ Target: https://[pks_api_endpoint]:8443
 Context: admin, from client admin
 ```
 
-Create a new user `cody` [example] with the admin privilages.
+Create a new user `cody` [example] with the admin privileges.
 
 ```console
 uaac user add cody --emails cody@example.com -p password
@@ -293,14 +293,15 @@ pks plans
 ```
 
 ```shell
-
+Name   ID                                    Description
+small  [PLAN ID]                             Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NzY3NTQ1Nyw0ODIxMjYwMTgsLTg3Mz
-MxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1
-NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0Mz
-AsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkw
-NjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxND
-Q5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2
-MTcwODAxMzBdfQ==
+eyJoaXN0b3J5IjpbLTExOTA5OTc1NTcsNDgyMTI2MDE4LC04Nz
+MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
+NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
+MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
+MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MT
+Q0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0x
+NjE3MDgwMTMwXX0=
 -->
