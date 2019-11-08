@@ -269,14 +269,17 @@ Context: admin, from client admin
 Create a new user `cody` [example] with the admin privilages.
 
 ```console
-
+uaac user add cody --emails cody@example.com -p password
+#user account successfully added
+uaac member add pks.clusters.admin cody
+#success
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQyNjA5MzQsNDgyMTI2MDE4LC04Nz
-MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
-NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
-MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
-MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MT
-Q0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0x
-NjE3MDgwMTMwXX0=
+eyJoaXN0b3J5IjpbLTQwNjcyOTM4MCw0ODIxMjYwMTgsLTg3Mz
+MxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1
+NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0Mz
+AsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkw
+NjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxND
+Q5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2
+MTcwODAxMzBdfQ==
 -->
