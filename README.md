@@ -183,9 +183,14 @@ om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password
 
 Similar to the BOSH Director, the PKS tile needs to be configured. The can be done similar to the BOSH Director by running the following commands - 
 
+```console
+texplate execute ../../../ci/assets/aws/pks-config.yml -f tf.output > pks-config.yml
+om -t pcf.awscloud.navneetv.com -u admin -p Passw0rd -k configure-product --config pks-config.yml
+```
 
+This should partially configure the tile. The 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU4MTc1MzQsLTE5MDYyMzMwOTUsMT
+eyJoaXN0b3J5IjpbLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMT
 UxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2
 ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC
 0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1
