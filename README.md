@@ -1,5 +1,5 @@
 # Installing PKS on AWS
-This document leverages a Ubuntu jumpbox/bastion host to deploy `PKS on AWS`. This is for demo/education purpose only and not intended for production use. Please use Concourse and Platform Automation for deploying in a more formal environment. 
+This document leverages a Ubuntu jump box/bastion host to deploy `PKS on AWS`. This is for demo/education purpose only and not intended for production use. Please use Concourse and Platform Automation for deploying in a more formal environment. 
 
 Prerequisites for the installation
 
@@ -102,7 +102,7 @@ terraform plan -out=plan
 terraform apply plan
 ```
 
-This should deploy the Opsman VM and all the required AWS artifacts(networking/security groups, DNS etc) necessary to PKS environment. 
+This should deploy the OpsMan VM and all the required AWS artifacts(networking/security groups, DNS etc) necessary to PKS environment. 
 
 The `terraform.tfstate` and `output.tf` file contains the required outputs from the terraform run.
 
@@ -110,7 +110,7 @@ The `terraform.tfstate` and `output.tf` file contains the required outputs from 
 
 * The OpsMan UI can be accessed in the browser at the following URL - https://pcf.subdomain.domainname.com.
 *  Access the OpsMan UI, accept the certificate warnings and proceed. 
-* Select `Internal Authentication` when asked to select the autoentication method. 
+* Select `Internal Authentication` when asked to select the authentication method. 
 * Enter the values for `Username`, `Password`, `Password confirmation`, `Decryption Password`, `Decryption Password confirmation`
 * If using Proxy, enter the proxy server specific configurations. 
 * Accept the EULA and press `Setup Authentication`
@@ -144,7 +144,7 @@ Upon successful configuration, the following changes need to be applies to creat
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k apply-changes
 ```
 
-This takes a while (approx 10+ minutes) and the end result is a fully configured BOSH Director. 
+This takes a while (approx. 10+ minutes) and the end result is a fully configured BOSH Director. 
 
 ## Stage 4
 
@@ -297,11 +297,11 @@ Name   ID                                    Description
 small  [PLAN ID]                             Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTA5OTc1NTcsNDgyMTI2MDE4LC04Nz
-MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
-NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
-MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
-MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MT
-Q0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0x
-NjE3MDgwMTMwXX0=
+eyJoaXN0b3J5IjpbMzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMz
+EyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2
+NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMC
+wtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2
+MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0ND
+ksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYx
+NzA4MDEzMF19
 -->
