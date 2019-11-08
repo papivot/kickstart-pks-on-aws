@@ -162,13 +162,18 @@ pivnet download-product-files --product-slug='pivotal-container-service' --relea
 pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=484672 # For Linux specific Kubectl CLI
 ```
 
-Find the link to the relevent
+Find the link to the relevant stemcell in the Product Description tab and download the **IaaS specific** stemcell.  For e.g.
+
+```console
+pivnet download-product-files --product-slug='stemcells-ubuntu-xenial' --release-version='315.81' --product-file-id=460228
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTc4NDg1MCwxNTEyMjc1NDMwLC00NT
-Y1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2
-LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOT
-gxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgw
-MTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLT
-E2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4
-Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTExODUzMDE5ODgsMTUxMjI3NTQzMCwtND
+U2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2Mjkz
+NiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLT
+k4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4
+MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC
+0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3
+ODM4NDY0XX0=
 -->
