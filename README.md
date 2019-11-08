@@ -148,13 +148,13 @@ This takes a while (approx 10+ minutes) and the end result is a fully configured
 
 During this stage, the required product binaries(tiles) and associated stemcell are uploaded to OpsManager. Once done, the tile is configured and the changes applied.
 
-To upload the tile, 
+To upload the tile, sign in to https://network.pivotal.io. Once signed in, search for Pivotal Container Serivice
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU5OTgwMDg1LDE1MTIyNzU0MzAsLTQ1Nj
-U5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYs
-LTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05OD
-E0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAx
-MzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMT
-YyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2Nzgz
-ODQ2NF19
+eyJoaXN0b3J5IjpbLTE3MjI2NjY2MTUsMTUxMjI3NTQzMCwtND
+U2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2Mjkz
+NiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLT
+k4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4
+MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC
+0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3
+ODM4NDY0XX0=
 -->
