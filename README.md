@@ -256,13 +256,22 @@ should return something like this -
 Target: https://[pks_api_endpoint]:8443
 Context: admin, from client admin
 ```
+```console
+uaac token client get admin -s [pks_uaa_management_admin_client_credential copied above]
+```
+should return something like this - 
+```shell
+Successfully fetched token via client credentials grant.
+Target: https://[api_end_:8443
+Context: admin, from client admin
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjQzODE3Miw0ODIxMjYwMTgsLTg3Mz
-MxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1
-NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0Mz
-AsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkw
-NjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxND
-Q5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2
-MTcwODAxMzBdfQ==
+eyJoaXN0b3J5IjpbLTExMTk3OTcyOTEsNDgyMTI2MDE4LC04Nz
+MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
+NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
+MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
+MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MT
+Q0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0x
+NjE3MDgwMTMwXX0=
 -->
