@@ -243,13 +243,16 @@ Once the PKS API VM has been installed and configured, we need to create a user(
 	* This can be done thru the UI or by running the following command - 
 ```console
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k credentials -p pivotal-container-service -c .properties.pks_uaa_management_admin_client -t json	
-
 # Copy the value of the secret.
 ```
-* Adjust the VM security group. Make sure that the security group `[pks_api_lb_security_group]` is added to the 
+* Adjust the VM security group. Make sure that the security group `[pks_api_lb_security_group]` is added to the `pivotal-container-service` EC2 instance in the AWS console. 
+* Connect to the PKS UAA
+```console
+uaac target https://api.pks.awscloud.navneetv.com:8443 --skip-ssl-validation
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTEwNDg1MDUsNDgyMTI2MDE4LC04Nz
+eyJoaXN0b3J5IjpbLTE0NjU3MDcwNjAsNDgyMTI2MDE4LC04Nz
 MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
 NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
 MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
