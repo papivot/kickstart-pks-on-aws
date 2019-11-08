@@ -296,12 +296,16 @@ pks plans
 Name   ID                                    Description
 small  [PLAN ID]                             Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 ```
+
+## Destroy
+
+Make sure that all EC2 instances created by the PKS environment, **excluding the OpsMan VM**, has been destroyed.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMz
-EyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2
-NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMC
-wtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2
-MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0ND
-ksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYx
-NzA4MDEzMF19
+eyJoaXN0b3J5IjpbLTEyMTE2MjMxMTYsMzMwOTI0MTkwLDQ4Mj
+EyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5
+MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOT
+UsMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIy
+NjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMj
+UxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2
+NzI1OTM3Nl19
 -->
