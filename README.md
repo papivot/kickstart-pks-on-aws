@@ -146,13 +146,15 @@ This takes a while (approx 10+ minutes) and the end result is a fully configured
 
 ### Installation of the PKS Control plane.
 
-During 
+During this stage, the required product binaries(tiles) and associated stemcell are uploaded to OpsManager. Once done, the tile is configured and the changes applied.
+
+To upload the tile, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMjA4NDMyOCwxNTEyMjc1NDMwLC00NT
-Y1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2
-LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOT
-gxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgw
-MTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLT
-E2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4
-Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbODU5OTgwMDg1LDE1MTIyNzU0MzAsLTQ1Nj
+U5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYs
+LTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05OD
+E0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAx
+MzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMT
+YyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2Nzgz
+ODQ2NF19
 -->
