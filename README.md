@@ -205,19 +205,19 @@ This is expected, as we did not provide the required certificates during Stage 1
 
 * Within the bastion host, capture the value of `pks_api_endpoint` from the `tf.output` file
 ```console
-grep api tf.output
+grep pks_api_endpoint tf.output
 ```
 * Login to the OpsManager UI.
 * Click on the `Enterprise PKS` tile.  
 * Click on `Settings`
 * Click on `PKS API` [should be orange in color]
-* 
+* In the `API Hostname (FQDN) *` field, provide the value captured for ` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyMjUwODAyLC0yMDE4MDcxOTAyLC0xMD
-gyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIy
-NzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OC
-wzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMy
-MDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNz
-YsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEy
-NjA3MDQ2MF19
+eyJoaXN0b3J5IjpbLTE3NTYwMDUzNzgsLTIwMTgwNzE5MDIsLT
+EwODI1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUx
+MjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2OD
+Q4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0x
+MzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OT
+M3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwy
+MTI2MDcwNDYwXX0=
 -->
