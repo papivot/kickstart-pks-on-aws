@@ -10,7 +10,7 @@ Prerequisites for the installation
 	sudo apt install jq wget ruby-full go-devel
 	```
 
-*  Access to Pivotal Download
+*  Access to Pivotal Download site - https://network.pivotal.io
 
 ## Stage 1
 ### Preparing the jumpbox/bastion
@@ -212,9 +212,9 @@ grep pks_api_endpoint tf.output
 * Click on `Settings`
 * Click on `PKS API` [should be orange in color]
 * In the `API Hostname (FQDN) *` field, provide the value captured for `pks_api_endpoint` earlier. 
-*  
+*  Click `[Generate RSA Certificate]`  and enter the values api.pks.awscloud.navneetv.com, *.pks.awscloud.navneetv.com
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyOTQwMzczMSwtMjAxODA3MTkwMiwtMT
+eyJoaXN0b3J5IjpbMjAwNzA1ODYzMSwtMjAxODA3MTkwMiwtMT
 A4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEy
 Mjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4ND
 gsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEz
