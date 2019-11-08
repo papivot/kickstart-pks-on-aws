@@ -246,14 +246,14 @@ om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password
 
 # Copy the value of the secret.
 ```
-
+* Adjust the VM security group. Make sure that the security group `[pks_api_lb_security_group]` is added to the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMD
-UzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTky
-MzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNz
-QsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2LC0xNzkx
-MDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOTgxNDU1Mj
-AsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2
-NzA4MzAxMzhdfQ==
+eyJoaXN0b3J5IjpbLTE2OTEwNDg1MDUsNDgyMTI2MDE4LC04Nz
+MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
+NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
+MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
+MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MT
+Q0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0x
+NjE3MDgwMTMwXX0=
 -->
