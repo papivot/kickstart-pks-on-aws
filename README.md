@@ -150,18 +150,18 @@ During this stage, the required product binaries(tiles) and associated stemcell 
 
 To upload the tile, sign in to https://network.pivotal.io. Once signed in, search for Pivotal Container Service. Select the appropriate version/release - for example - 1.5.1.
 
-Click on the `i`Copy the `pivnet` cli command text and paste it in the bastion shell. For example - 
+Click on the **i** next to the product text. Copy the `pivnet` cli command text and paste it in the bastion shell. For example - 
 
 ```console
 pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=505925
 ```
-similarly 
+Similarly, copy the Linux PKS CLI and K 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2MDY5Mjc1LDE1MTIyNzU0MzAsLTQ1Nj
-U5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYs
-LTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05OD
-E0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAx
-MzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMT
-YyMjY0OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2Nzgz
-ODQ2NF19
+eyJoaXN0b3J5IjpbMTQ4ODE5MDY1MiwxNTEyMjc1NDMwLC00NT
+Y1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2
+LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOT
+gxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgw
+MTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLT
+E2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4
+Mzg0NjRdfQ==
 -->
