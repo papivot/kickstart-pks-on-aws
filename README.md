@@ -114,12 +114,16 @@ The `terraform.tfstate` and `output.tf` file contains the required outputs from 
 ## Stage 3
 ### BOSH Director configuration and installation
 
-Leveraging the `terraform.tfstate` file, the BOSH director is configured. 
+Leveraging the `terraform.tfstate` file, the BOSH director is configured. While inside the directory where the Stage2 was executed, run the following commands - 
+
+```console
+jq -e -r '.outputs|map_values(.value)' terraform.tfstate > tf.output
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OT
-EwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NTUy
-MCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMT
-Y3MDgzMDEzOCw2OTMzNzE1MDgsMjEyNjA3MDQ2MCwtMTYyMjY0
-OTM2MywtMTAxNDY2MDAxMyw1OTEwMDY0OSwtMTc2NzgzODQ2NF
-19
+eyJoaXN0b3J5IjpbNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MD
+YyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0
+OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNj
+E3MDgwMTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0
+NjAsLTE2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLT
+E3Njc4Mzg0NjRdfQ==
 -->
