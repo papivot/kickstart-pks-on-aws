@@ -195,10 +195,17 @@ configuring pivotal-container-service...
 setting up network
 finished setting up network
 setting properties
-...
-a1
-{"errors":{".pivotal-container-service.pks_tls":["Cert pem can't be blank","Cert pem is invalid","Private key pem can't be blank","Private key pem is invalid"]}}
-0
+finished setting properties
+applying resource configurations...
+finished applying resource configurations
+applying max in flight for the following jobs:
+syslog configuration is not provided, nothing to do here
+applying errand configuration for the following errands:
+	smoke-tests
+could not execute "configure-product": configuration not complete.
+The properties you provided have been set,
+but some required properties or configuration details are still missing.
+Visit the Ops Manager for details: pcf.awscloud.navneetv.com
 ```
 This is expected, as we did not provide the api end point certificates (optional) during Stage 1. This can be manually fixed by performing the following steps - 
 
@@ -217,11 +224,11 @@ grep pks_api_endpoint tf.output
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMT
-A4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEy
-Mjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4ND
-gsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEz
-MjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mz
-c2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIx
-MjYwNzA0NjBdfQ==
+eyJoaXN0b3J5IjpbLTExNTA2NDc4OCwxNjEwNTMwMjM0LC0yMD
+E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
+MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
+EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
+ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5Nj
+M4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2
+OTMzNzE1MDhdfQ==
 -->
