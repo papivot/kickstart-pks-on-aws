@@ -240,9 +240,15 @@ This takes a while (approx 10+ minutes) and the end result is a functioning PKS 
 Once the PKS API VM has been installed and configured, we need to create a user(s) that can access the API with the correct privileges to deploy/manage K8s clusters. 
 
 * Get the UAA Management admin credentials from the PKS tile 
-	* This can be done thru the UI or by running the followin
+	* This can be done thru the UI or by running the following command - 
+```console
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k credentials -p pivotal-container-service -c .properties.pks_uaa_management_admin_client -t json	
+
+# Copy the value of the secret.
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTc3MzY0OSwtODczMzEyOTc3LDE2MT
+eyJoaXN0b3J5IjpbMTIwNTA4ODE0OCwtODczMzEyOTc3LDE2MT
 A1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5
 MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMD
 c0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5
