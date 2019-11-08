@@ -237,13 +237,16 @@ This takes a while (approx 10+ minutes) and the end result is a functioning PKS 
 
 ### Configure PKS Control plane
 
-Once the PKS API VM has been installed and configured, we need to add credentials to the API 
+Once the PKS API VM has been installed and configured, we need to create a user(s) that can access the API with the correct privileges to deploy/manage K8s clusters. 
+
+* Get the UAA Management admin credentials from the PKS tile 
+	* This can be done thru the UI or by running the followin
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjM2NTMzMzgsLTg3MzMxMjk3NywxNj
-EwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAx
-OTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MT
-A3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3
-OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NT
-UyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAs
-MTY3MDgzMDEzOF19
+eyJoaXN0b3J5IjpbMjEzOTc3MzY0OSwtODczMzEyOTc3LDE2MT
+A1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5
+MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMD
+c0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5
+MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NT
+IwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwx
+NjcwODMwMTM4XX0=
 -->
