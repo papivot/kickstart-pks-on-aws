@@ -89,6 +89,9 @@ vpc_cidr           = "10.0.0.0/16"
 -   ops_manager_ami: **(optional)** Ops Manager AMI, get the right AMI according to your region from the AWS guide downloaded from [Pivotal Network](https://network.pivotal.io/products/ops-manager) (if set to `""` no Ops Manager VM will be created)
 -  rds_instance_count: **(default: 0)** Whether or not you would like an RDS for your deployment
 
+#### NOTE
+For the demo/POC purpose, we will not be deploying/using custom certificates. We will be leveraging self signed certificates. As a result, the following tweake
+
 Once the file has been updates, deploy the environment using terraform. 
 
 ```console
@@ -228,7 +231,7 @@ om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password
 ```
 This takes a while (approx 10+ minutes) and the end result is a functioning PKS API Control plane.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzM0Mzc5OCwxNjEwNTMwMjM0LC0yMD
+eyJoaXN0b3J5IjpbMTQ4ODY3ODQ3MywxNjEwNTMwMjM0LC0yMD
 E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
 MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
 EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
