@@ -155,6 +155,8 @@ Click on the **i** next to the product text. Copy the `pivnet` cli command text 
 ```console
 pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=505925
 ```
+The PKS 
+
 Similarly, copy the Linux specific PKS CLI and Kubectl CLI picnet cli command text and past it in the bastion shell. For example -
 
 ```console
@@ -172,8 +174,12 @@ Once these 4 files have been downloaded, the PKS Product file and the stemcell n
 
 This is done by the following commands - 
 
+```console
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k  upload-product -p [name_of_the_product_file]
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDkyNTA2NDksMTUxMjI3NTQzMCwtND
+eyJoaXN0b3J5IjpbLTIxMzk3MTYxOTYsMTUxMjI3NTQzMCwtND
 U2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2Mjkz
 NiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLT
 k4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4
