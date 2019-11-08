@@ -155,13 +155,19 @@ Click on the **i** next to the product text. Copy the `pivnet` cli command text 
 ```console
 pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=505925
 ```
-Similarly, copy the Linux PKS CLI and K 
+Similarly, copy the Linux specific PKS CLI and Kubectl CLI picnet cli command text and past it in the bastion shell. For example -
+
+```console
+pivnet download-product-files --product-slug='pivotal-container-service' --release-version='1.5.1' --product-file-id=496006 # For Linux specific PKS CLI
+
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODE5MDY1MiwxNTEyMjc1NDMwLC00NT
-Y1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2
-LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOT
-gxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgw
-MTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLT
-E2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4
-Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTE5MDM4NzYyOTAsMTUxMjI3NTQzMCwtND
+U2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2Mjkz
+NiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLT
+k4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4
+MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC
+0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3
+ODM4NDY0XX0=
 -->
