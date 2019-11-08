@@ -128,11 +128,7 @@ this should produce an output similar to this -
 started configuring director options for bosh tile
 finished configuring director options for bosh tile
 started configuring availability zone options for bosh tile
-successfully fetched AZs, continuing
-finished configuring availability zone options for bosh tile
-started configuring network options for bosh tile
-finished configuring network options for bosh tile
-started configuring network assignment options for bosh tile
+...
 finished configuring network assignment options for bosh tile
 started configuring resource options for bosh tile
 finished configuring resource options for bosh tile
@@ -144,9 +140,13 @@ Upon successful configuration, the following changes need to be applies to creat
 om -t pcf.awscloud.navneetv.com -u admin -p Passw0rd -k apply-changes
 ```
 
-This takes a while (approx 
+This takes a while (approx 10+ minutes) and the end result is a fully configured BOSH Director. 
+
+## Stage 4
+
+### Installation of the PKS Control plane.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzQyMzMzNywtNDU2NTkxMDc0LDU0Nz
+eyJoaXN0b3J5IjpbMTgzMjg2NTE1OCwtNDU2NTkxMDc0LDU0Nz
 UxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3
 MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3Mj
 U2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMw
