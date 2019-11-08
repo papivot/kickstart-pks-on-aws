@@ -203,17 +203,21 @@ a1
 
 This is expected, as we did not provide the required certificates during Stage 1. This can be manually fixed by performing the following steps - 
 
+* Within the bastion host, capture the value of `pks_api_endpoint` from the `tf.output` file
+```console
+grep api tf.output
+```
 * Login to the OpsManager UI.
 * Click on the `Enterprise PKS` tile.  
 * Click on `Settings`
 * Click on `PKS API` [should be orange in color]
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLT
-IwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2
-NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNi
-wtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4
-MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4MD
-EzMCwxNjcwODMwMTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC0x
-NjIyNjQ5MzYzXX0=
+eyJoaXN0b3J5IjpbMjIyMjUwODAyLC0yMDE4MDcxOTAyLC0xMD
+gyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIy
+NzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OC
+wzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMy
+MDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNz
+YsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2OTMzNzE1MDgsMjEy
+NjA3MDQ2MF19
 -->
