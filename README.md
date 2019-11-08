@@ -176,13 +176,13 @@ Once these 4 files have been downloaded, the PKS Product file and the stemcell n
 This is done by the following commands - 
 
 ```console
-om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k  upload-product -p [name_of_the_product_file]
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k upload-product  -p [name_of_the_product_file]
 om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k upload-stemcell -s [name_of_stemcell_file]
-om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k stage-product -p pivotal-container-service -v [version# e.g.1.5.1-build.8
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k stage-product   -p pivotal-container-service -v [version_# e.g. 1.5.1-build.8]
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwMjEwMzQ1LC0xOTA2MjMzMDk1LDE1MT
+eyJoaXN0b3J5IjpbLTMzMjMzNDMxLC0xOTA2MjMzMDk1LDE1MT
 IyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0
 OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMT
 MyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkz
