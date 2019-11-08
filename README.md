@@ -200,8 +200,7 @@ a1
 {"errors":{".pivotal-container-service.pks_tls":["Cert pem can't be blank","Cert pem is invalid","Private key pem can't be blank","Private key pem is invalid"]}}
 0
 ```
-
-This is expected, as we did not provide the required certificates during Stage 1. This can be manually fixed by performing the following steps - 
+This is expected, as we did not provide the api end point certificates (optional) during Stage 1. This can be manually fixed by performing the following steps - 
 
 * Within the bastion host, capture the value of `pks_api_endpoint` from the `tf.output` file
 ```console
@@ -215,8 +214,10 @@ grep pks_api_endpoint tf.output
 *  Click `[Generate RSA Certificate]`  and enter the values of `pks_api_endpoint` 
 * Click `Generate`
 * Click `Save`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTk5NzYwMywtMjAxODA3MTkwMiwtMT
+eyJoaXN0b3J5IjpbMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMT
 A4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEy
 Mjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4ND
 gsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEz
