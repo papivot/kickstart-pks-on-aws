@@ -225,15 +225,15 @@ or
 * executing the following command within the Bastion host
 
 ```console
-
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k apply-changes
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTQ0MzgzOTUsMTYxMDUzMDIzNCwtMj
-AxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkw
-NjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMT
-ExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04
-OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOT
-YzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgs
-NjkzMzcxNTA4XX0=
+eyJoaXN0b3J5IjpbMjA1ODA3MTkwNCwxNjEwNTMwMjM0LC0yMD
+E4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2
+MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMT
+EsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5
+ODAyMTI1MSwtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5Nj
+M4LC01NjcyNTkzNzYsLTE2MTcwODAxMzAsMTY3MDgzMDEzOCw2
+OTMzNzE1MDhdfQ==
 -->
