@@ -118,12 +118,14 @@ Leveraging the `terraform.tfstate` file, the BOSH director is configured. While 
 
 ```console
 jq -e -r '.outputs|map_values(.value)' terraform.tfstate > tf.output
+texplate execute ../../../ci/assets/aws/director-config.yml -f tf.output
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MD
-YyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0
-OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNj
-E3MDgwMTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0
-NjAsLTE2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLT
-E3Njc4Mzg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTE4NDU3MTI4MDQsNTQ3NTExMTExLDE0Mj
+I2MzY4NDgsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEy
+NTEsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNT
+Y3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMzgsNjkzMzcx
+NTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLTEwMTQ2NjAwMT
+MsNTkxMDA2NDksLTE3Njc4Mzg0NjRdfQ==
 -->
