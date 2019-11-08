@@ -168,8 +168,12 @@ Find the link to the relevant stemcell in the Product Description tab and downlo
 pivnet download-product-files --product-slug='stemcells-ubuntu-xenial' --release-version='315.81' --product-file-id=460228
 ```
 
+Once these 4 files have been downloaded, the PKS Product file and the stemcell needs to be uploaded to the OpsManager,
+
+This is done by the following commands - 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODUzMDE5ODgsMTUxMjI3NTQzMCwtND
+eyJoaXN0b3J5IjpbLTEyNDkyNTA2NDksMTUxMjI3NTQzMCwtND
 U2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2Mjkz
 NiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC0xMzIwODE0NDksLT
 k4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4
