@@ -185,16 +185,29 @@ Similar to the BOSH Director, the PKS tile needs to be configured. The can be do
 
 ```console
 texplate execute ../../../ci/assets/aws/pks-config.yml -f tf.output > pks-config.yml
-om -t pcf.awscloud.navneetv.com -u admin -p Passw0rd -k configure-product --config pks-config.yml
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k configure-product --config pks-config.yml
 ```
 
-This should partially configure the tile. The 
+This should partially configure the tile with the output similar to this - 
+
+```shell
+configuring pivotal-container-service...
+setting up network
+finished setting up network
+setting properties
+...
+a1
+{"errors":{".pivotal-container-service.pks_tls":["Cert pem can't be blank","Cert pem is invalid","Private key pem can't be blank","Private key pem is invalid"]}}
+0
+```
+
+This is e
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMT
-UxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2
-ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3MywtODk4MDIxMjUxLC
-0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2MTk2MzgsLTU2NzI1
-OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMwMTM4LDY5MzM3MTUwOC
-wyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC0xMDE0NjYwMDEzLDU5
-MTAwNjQ5XX0=
+eyJoaXN0b3J5IjpbMTMwMzg2NTgzMiwtMjAwMTkyMzYxMywtMT
+kwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTEx
+MTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2LC0xNzkxMDYxNTczLC
+04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOTgxNDU1MjAsMTcyNTYx
+OTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgwMTMwLDE2NzA4MzAxMz
+gsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLTE2MjI2NDkzNjMsLTEw
+MTQ2NjAwMTNdfQ==
 -->
