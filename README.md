@@ -248,15 +248,21 @@ om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password
 * Adjust the VM security group. Make sure that the security group `[pks_api_lb_security_group]` is added to the `pivotal-container-service` EC2 instance in the AWS console. 
 * Connect to the PKS UAA
 ```console
-uaac target https://api.pks.awscloud.navneetv.com:8443 --skip-ssl-validation
+uaac target https://[pks_api_endpoint]:8443 --skip-ssl-validation
+```
+
+should return something like this - 
+```shell
+Target: https://[pks_api_endpoint]:8443
+Context: admin, from client admin
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjU3MDcwNjAsNDgyMTI2MDE4LC04Nz
-MzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5
-NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1ND
-MwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5
-MDYyOTM2LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MT
-Q0OSwtOTgxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0x
-NjE3MDgwMTMwXX0=
+eyJoaXN0b3J5IjpbMTY5NjQzODE3Miw0ODIxMjYwMTgsLTg3Mz
+MxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1
+NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0Mz
+AsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkw
+NjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MSwtMTMyMDgxND
+Q5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01NjcyNTkzNzYsLTE2
+MTcwODAxMzBdfQ==
 -->
