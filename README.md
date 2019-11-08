@@ -12,7 +12,7 @@ Prerequisites for the installation
 *  Access to Pivotal Download site - https://network.pivotal.io
 
 ## Stage 1
-### Preparing the jumpbox/bastion
+### Preparing the jump box/bastion
  The following packages need to be installed on the bastion host - 
  * AWS CLI (optional)
 	```console
@@ -316,11 +316,11 @@ terraform destroy
 ```
 This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU0NzM0OTUwLDMzMDkyNDE5MCw0ODIxMj
-YwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAy
-LC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LD
-E1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYz
-Njg0OCwzNDkwNjI5MzYsLTE3OTEwNjE1NzMsLTg5ODAyMTI1MS
-wtMTMyMDgxNDQ5LC05ODE0NTUyMCwxNzI1NjE5NjM4LC01Njcy
-NTkzNzZdfQ==
+eyJoaXN0b3J5IjpbLTkyMzU2OTg2NCw5NTQ3MzQ5NTAsMzMwOT
+I0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQs
+LTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2MTMsLT
+E5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUx
+MTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3My
+wtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2
+MTk2MzhdfQ==
 -->
