@@ -137,7 +137,7 @@ finished configuring resource options for bosh tile
 Upon successful configuration, the following changes need to be applies to create and configure the BOSH Director VM. This can be done by -
 
 ```console
-om -t pcf.awscloud.navneetv.com -u admin -p Passw0rd -k apply-changes
+om -t [fqdn_opsmanager] -u [opsmansger_admin_user] -p [opsmansger_admin_password] -k apply-changes
 ```
 
 This takes a while (approx 10+ minutes) and the end result is a fully configured BOSH Director. 
@@ -145,11 +145,14 @@ This takes a while (approx 10+ minutes) and the end result is a fully configured
 ## Stage 4
 
 ### Installation of the PKS Control plane.
+
+During 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0Nz
-UxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3
-MywtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3Mj
-U2MTk2MzgsLTU2NzI1OTM3NiwtMTYxNzA4MDEzMCwxNjcwODMw
-MTM4LDY5MzM3MTUwOCwyMTI2MDcwNDYwLC0xNjIyNjQ5MzYzLC
-0xMDE0NjYwMDEzLDU5MTAwNjQ5LC0xNzY3ODM4NDY0XX0=
+eyJoaXN0b3J5IjpbMTIzMjA4NDMyOCwxNTEyMjc1NDMwLC00NT
+Y1OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2
+LC0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOT
+gxNDU1MjAsMTcyNTYxOTYzOCwtNTY3MjU5Mzc2LC0xNjE3MDgw
+MTMwLDE2NzA4MzAxMzgsNjkzMzcxNTA4LDIxMjYwNzA0NjAsLT
+E2MjI2NDkzNjMsLTEwMTQ2NjAwMTMsNTkxMDA2NDksLTE3Njc4
+Mzg0NjRdfQ==
 -->
