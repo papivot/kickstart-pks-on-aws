@@ -7,7 +7,7 @@ Prerequisites for the installation
 *  The following packages installed on the bastion host
 	* jq, wget, ruby-full, go-devel
 	```console
-	sudo apt install jq wget ruby-full go-devel
+	sudo apt install jq wget ruby-full golang
 	```
 *  Access to Pivotal Download site - https://network.pivotal.io
 
@@ -39,6 +39,7 @@ Prerequisites for the installation
 	wget https://github.com/pivotal-cf/pivnet-cli/releases/download/v0.0.72/pivnet-linux-amd64-0.0.72
 	chmod +x pivnet-linux-amd64-0.0.72
 	sudo mv pivnet-linux-amd64-0.0.72 /usr/local/bin/pivnet
+	pivnet login --api-token=[YOUR_API_TOKEN]
 	```
 * UAA Cli
 	* Install the latest Cloudfoundry UAA Cli - uaac 
