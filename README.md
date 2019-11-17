@@ -403,20 +403,24 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 
 1.  In the  [AWS Management Console](https://aws.amazon.com/console/), filter all the **master** EC2 instances. 
 2. For each master instance, `Action` -> `Networking`->`Change security groups`. Select the `pks-master` security group and `Assign Security Groups`
-3. Create a new `Network Load Balancer`, with the following settings - 
+
+Create a Network Load Balancer to route the traffic to the API servers - 
+
+1. Create a new `Network Load Balancer`, with the following settings - 
 	* Load Balancer Port: 8443
 	* Select all the AZs and their corresponding public facing subnets within your VPC
 	* Create a new `target group`, Target type as 	`Instance`, TCP and port `8443`.
 	* Register all the master EC2 instances to the Target group.
-4. Update the DNS to advertise the newly created NW LB as an alias to the Kubernetes Master Host FQDN entered in the cluster creation stage. 
+2. Update the DNS to advertise the newly created NW LB as an alias to the Kubernetes Master Host FQDN entered in the cluster creation stage. 
 
 Generate the Kubeconfig file for the user using the following command - 
 
 ```console
 pks get-credentials cluster00
 ```
+where cluster00 is the name of the cluster that we just created. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzYxODIwNSwzNDI1ODc5MywxMjAxMz
+eyJoaXN0b3J5IjpbLTkwNjU1MTM3NywzNDI1ODc5MywxMjAxMz
 k1MDU3LDE2MTQ0MzcyMzcsMTgzMTU4NzQzMCw4Njc5NzM0MjAs
 LTE2NjUxMjExNCwtNjY0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMz
 U2OTg2NCw5NTQ3MzQ5NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwt
