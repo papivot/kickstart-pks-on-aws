@@ -328,7 +328,8 @@ This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2
 The first step in deploying a cluster is to login to the pks api and selecting a plan. 
 ```console
 pks login -a api.pks.awscloud.navneetv.com -u cody -k
-
+```
+```shell
 Password: ********
 API Endpoint: api.pks.awscloud.navneetv.com
 User: cody
@@ -336,11 +337,19 @@ Login successful.
 ```
 ```console
 pks plans
+```
+```shell
 Name   ID                                    Description
 small  8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 ```
+
+We will use the `small` plan in this example to create a cluster.  To do so execute the following command - 
+
+```console
+pks create-cluster cluster00 --external-hostname cluster00.awscloud.navneetv.com  --plan small
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTUzOTM3NywtMTY2NTEyMTE0LC02Nj
+eyJoaXN0b3J5IjpbLTgxMzExNDU4NCwtMTY2NTEyMTE0LC02Nj
 QwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1
 MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMD
 UzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTky
