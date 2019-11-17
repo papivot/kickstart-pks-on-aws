@@ -401,13 +401,14 @@ Last Action Description:  Instance provisioning completed
 ```
 Once the cluster provisioning is complete, adjust the security groups on the master by performing the following steps -
 
-1.  In the  [AWS Management Console](https://aws.amazon.com/console/),
+1.  In the  [AWS Management Console](https://aws.amazon.com/console/), filter all the **master** EC2 instances. 
+2. Fora each master instance, `Action` -> `Networking`->`Change security groups`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTYzODg3MzksMTYxNDQzNzIzNywxOD
-MxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02NjQwNDQy
-OTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1MCwzMz
-A5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIz
-NCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMy
-wtMTkwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3
-NTExMTExXX0=
+eyJoaXN0b3J5IjpbMTczOTUyNzQ3MywxNjE0NDM3MjM3LDE4Mz
+E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
+MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
+kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
+LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC
+0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1
+MTExMTFdfQ==
 -->
