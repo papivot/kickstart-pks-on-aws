@@ -368,6 +368,7 @@ Use 'pks cluster cluster00' to monitor the state of your cluster
 ```
 It takes around 15-20 mins for the cluster to get deployed. 
 
+---
 #### AWS Prerequisites 
 Once deployed, we need to perform a quick AWS specific PKS fix on VPC. Copy the UUID of the cluster that is being deployed - `850bbd0a-1786-4473-86c2-5e46d5e0b9cd` in this example. 
 
@@ -385,12 +386,19 @@ Perform the following steps before you create a load balancer:
 
 ---
 
+To validate if the cluster provisioning is complete, run the following command - 
+
+```command
+pks cluster cluster00
+```
+An output containing the 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDEyMTY5NCwxNjE0NDM3MjM3LDE4Mz
-E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
-MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
-kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
-LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC
-0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1
-MTExMTFdfQ==
+eyJoaXN0b3J5IjpbNjExNzQ2NTczLDE2MTQ0MzcyMzcsMTgzMT
+U4NzQzMCw4Njc5NzM0MjAsLTE2NjUxMjExNCwtNjY0MDQ0Mjkx
+LC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5NTAsMzMwOT
+I0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQs
+LTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2MTMsLT
+E5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUx
+MTExMV19
 -->
