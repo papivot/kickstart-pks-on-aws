@@ -433,13 +433,18 @@ ip-10-0-9-5.us-east-2.compute.internal    Ready    <none>   59m   v1.14.6
 
 ## Stage 2 - Deploy a workload
 
-Download a sample yaml file from the following Github repo. 
+Download a sample yaml file 
+
+```yaml
+
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Mjc0OTgwMiwtMTgwMjIwMzM5LDM0Mj
-U4NzkzLDEyMDEzOTUwNTcsMTYxNDQzNzIzNywxODMxNTg3NDMw
-LDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02NjQwNDQyOTEsLTM4NT
-U4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1MCwzMzA5MjQxOTAs
-NDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxOD
-A3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIz
-MzA5NV19
+eyJoaXN0b3J5IjpbLTE0MDUzMDc2ODQsLTY1Mjc0OTgwMiwtMT
+gwMjIwMzM5LDM0MjU4NzkzLDEyMDEzOTUwNTcsMTYxNDQzNzIz
+NywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02Nj
+QwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1
+MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMD
+UzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTky
+MzYxM119
 -->
