@@ -316,12 +316,18 @@ Make sure that all EC2 instances created by the PKS environment, **excluding the
 terraform destroy
 ```
 This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2**.
+
+---
+---
+# Cluster creation
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMzU2OTg2NCw5NTQ3MzQ5NTAsMzMwOT
-I0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQs
-LTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2MTMsLT
-E5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUx
-MTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5MTA2MTU3My
-wtODk4MDIxMjUxLC0xMzIwODE0NDksLTk4MTQ1NTIwLDE3MjU2
-MTk2MzhdfQ==
+eyJoaXN0b3J5IjpbLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1ND
+czNDk1MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5Nzcs
+MTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMj
+AwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1
+OTEwNzQsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2LC
+0xNzkxMDYxNTczLC04OTgwMjEyNTEsLTEzMjA4MTQ0OSwtOTgx
+NDU1MjBdfQ==
 -->
