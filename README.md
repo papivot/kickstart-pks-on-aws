@@ -431,7 +431,7 @@ ip-10-0-8-6.us-east-2.compute.internal    Ready    <none>   61m   v1.14.6
 ip-10-0-9-5.us-east-2.compute.internal    Ready    <none>   59m   v1.14.6
 ```
 
-## Stage 2 - Deploy a workload
+## Stage 2 - Deploy and access a workload.
 
 Download the sample yaml file and save it as k8soperations.yaml
 
@@ -612,11 +612,11 @@ Curl the k8s-operations' `External-IP` to get the output.
 curl abb23fb47098a11eaba9f02cca9a6605-8595748.us-east-2.elb.amazonaws.com
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE3ODk4MDMsLTY1Mjc0OTgwMiwtMT
-gwMjIwMzM5LDM0MjU4NzkzLDEyMDEzOTUwNTcsMTYxNDQzNzIz
-NywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02Nj
-QwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1
-MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMD
-UzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTky
-MzYxM119
+eyJoaXN0b3J5IjpbMTIwNTAyMjY2MCwtMjA1MTc4OTgwMywtNj
+UyNzQ5ODAyLC0xODAyMjAzMzksMzQyNTg3OTMsMTIwMTM5NTA1
+NywxNjE0NDM3MjM3LDE4MzE1ODc0MzAsODY3OTczNDIwLC0xNj
+Y1MTIxMTQsLTY2NDA0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4
+NjQsOTU0NzM0OTUwLDMzMDkyNDE5MCw0ODIxMjYwMTgsLTg3Mz
+MxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1
+NjQwXX0=
 -->
