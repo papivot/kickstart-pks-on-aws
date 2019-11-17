@@ -405,9 +405,11 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 2. For each master instance, `Action` -> `Networking`->`Change security groups`. Select the `pks-master` security group and `Assign Security Groups`
 3. Create a new `Network Load Balancer`, with the following settings - 
 	* Load Balancer Port: 8443
-	* Select all the AZs and their corresponding public facing subnets withi
+	* Select all the AZs and their corresponding public facing subnets within your VPC
+	* Create a new `target group`, Target type as 	`Instance`, TCP and port `8443`.
+	* Register all the master EC2 instance 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTYxNDY3LDEyMDEzOTUwNTcsMTYxND
+eyJoaXN0b3J5IjpbOTQ5MDkxMzgwLDEyMDEzOTUwNTcsMTYxND
 QzNzIzNywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0
 LC02NjQwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1ND
 czNDk1MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5Nzcs
