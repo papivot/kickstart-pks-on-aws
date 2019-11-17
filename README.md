@@ -375,18 +375,16 @@ Perform the following steps before you create a load balancer:
 4.  In the  [AWS Management Console](https://aws.amazon.com/console/), tag **each public subnet** based on the table below, replacing  `CLUSTER-UUID`  with the unique identifier of the cluster. Leave the  **Value**  field empty.
     
     Key
-    
-    Value
-    
     `kubernetes.io/cluster/service-instance_CLUSTER-UUID`
     
-    empty
+    Value
+   ` empty`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDQzNzIzNywxODMxNTg3NDMwLDg2Nz
-k3MzQyMCwtMTY2NTEyMTE0LC02NjQwNDQyOTEsLTM4NTU4MTkx
-MSwtOTIzNTY5ODY0LDk1NDczNDk1MCwzMzA5MjQxOTAsNDgyMT
-I2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkw
-MiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NS
-wxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2
-MzY4NDhdfQ==
+eyJoaXN0b3J5IjpbMjA5MzkyNTcyOSwxNjE0NDM3MjM3LDE4Mz
+E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
+MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
+kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
+LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC
+0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1
+MTExMTFdfQ==
 -->
