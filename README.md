@@ -405,12 +405,13 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 2. For each master instance, `Action` -> `Networking`->`Change security groups`. Select the `pks-master` security group and `Assign Security Groups`
 3. Create a new `Network Load Balancer`, with the following settings - 
 	* Load Balancer Port: 8443
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTM5NTA1NywxNjE0NDM3MjM3LDE4Mz
-E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
-MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
-kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
-LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC
-0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1
-MTExMTFdfQ==
+eyJoaXN0b3J5IjpbMTg5NjU2OTU1MywxMjAxMzk1MDU3LDE2MT
+Q0MzcyMzcsMTgzMTU4NzQzMCw4Njc5NzM0MjAsLTE2NjUxMjEx
+NCwtNjY0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NT
+Q3MzQ5NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3
+LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLT
+IwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2
+NTkxMDc0XX0=
 -->
