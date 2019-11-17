@@ -366,13 +366,15 @@ Network Profile Name:
 
 Use 'pks cluster cluster00' to monitor the state of your cluster
 ```
-It takes around 15-20 mins for the cluster to get deployed. Once deployed, we need to perform a quick AWS specific PKS fix on VPC.
+It takes around 15-20 mins for the cluster to get deployed. Once deployed, we need to perform a quick AWS specific PKS fix on VPC. Copy the UUID of the cluster that is being deployed - `850bbd0a-1786-4473-86c2-5e46d5e0b9cd` in this example. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2ND
-A0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUw
-LDMzMDkyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNT
-MwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIz
-NjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NC
-w1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEw
-NjE1NzNdfQ==
+eyJoaXN0b3J5IjpbMTgzMTU4NzQzMCw4Njc5NzM0MjAsLTE2Nj
+UxMjExNCwtNjY0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMzU2OTg2
+NCw5NTQ3MzQ5NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMz
+EyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2
+NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMC
+wtNDU2NTkxMDc0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2
+MjkzNl19
 -->
