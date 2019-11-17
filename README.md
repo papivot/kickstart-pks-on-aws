@@ -403,9 +403,10 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 
 1.  In the  [AWS Management Console](https://aws.amazon.com/console/), filter all the **master** EC2 instances. 
 2. For each master instance, `Action` -> `Networking`->`Change security groups`. Select the `pks-master` security group and `Assign Security Groups`
-3. Create a new `Network Load Balancer`
+3. Create a new `Network Load Balancer`, with the following settings - 
+	* Load Balancer Port: 8443
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDA5NjY4NywxNjE0NDM3MjM3LDE4Mz
+eyJoaXN0b3J5IjpbMTIwMTM5NTA1NywxNjE0NDM3MjM3LDE4Mz
 E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
 MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
 kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
