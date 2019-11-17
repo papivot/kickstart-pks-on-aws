@@ -606,13 +606,17 @@ NAME                                        DESIRED   CURRENT   READY   AGE
 replicaset.apps/k8s-operations-5b77c9f9d6   1         1         1       15m
 ```
 
-Curl the External
+Curl the k8s-operations' `External-IP` to get the output.
+
+```console
+curl abb23fb47098a11eaba9f02cca9a6605-8595748.us-east-2.elb.amazonaws.com
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3MTQ3Nzc3LC02NTI3NDk4MDIsLTE4MD
-IyMDMzOSwzNDI1ODc5MywxMjAxMzk1MDU3LDE2MTQ0MzcyMzcs
-MTgzMTU4NzQzMCw4Njc5NzM0MjAsLTE2NjUxMjExNCwtNjY0MD
-Q0MjkxLC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5NTAs
-MzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1Mz
-AyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2
-MTNdfQ==
+eyJoaXN0b3J5IjpbLTIwNTE3ODk4MDMsLTY1Mjc0OTgwMiwtMT
+gwMjIwMzM5LDM0MjU4NzkzLDEyMDEzOTUwNTcsMTYxNDQzNzIz
+NywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02Nj
+QwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1
+MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMD
+UzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTky
+MzYxM119
 -->
