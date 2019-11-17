@@ -418,13 +418,26 @@ Generate the Kubeconfig file for the user using the following command -
 ```console
 pks get-credentials cluster00
 ```
-where cluster00 is the name of the cluster that we just created. 
+where `cluster00` is the name of the cluster that we just created. 
+
+Validate that you can access the cluster by running the following command - 
+
+```console
+kubectl get nodes
+```
+should return  output similar to this - 
+```shell
+NAME                                      STATUS   ROLES    AGE   VERSION
+ip-10-0-10-5.us-east-2.compute.internal   Ready    <none>   57m   v1.14.6
+ip-10-0-8-6.us-east-2.compute.internal    Ready    <none>   61m   v1.14.6
+ip-10-0-9-5.us-east-2.compute.internal    Ready    <none>   59m   v1.14.6
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjU1MTM3NywzNDI1ODc5MywxMjAxMz
-k1MDU3LDE2MTQ0MzcyMzcsMTgzMTU4NzQzMCw4Njc5NzM0MjAs
-LTE2NjUxMjExNCwtNjY0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMz
-U2OTg2NCw5NTQ3MzQ5NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwt
-ODczMzEyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwOD
-I1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3
-NTQzMF19
+eyJoaXN0b3J5IjpbMjg4NzUxMDE4LDM0MjU4NzkzLDEyMDEzOT
+UwNTcsMTYxNDQzNzIzNywxODMxNTg3NDMwLDg2Nzk3MzQyMCwt
+MTY2NTEyMTE0LC02NjQwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNT
+Y5ODY0LDk1NDczNDk1MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04
+NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4Mj
+U5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1
+NDMwXX0=
 -->
