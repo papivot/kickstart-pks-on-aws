@@ -385,16 +385,24 @@ Perform the following steps before you create a load balancer:
    ` empty`
 
 ---
-
 To validate if the cluster provisioning is complete, run the following command - 
 
 ```command
 pks cluster cluster00
 ```
-An output containing the 
+An output containing the following status should indicate a successful completion 
+
+```shell
+...
+Last Action:              CREATE
+Last Action State:        succeeded
+Last Action Description:  Instance provisioning completed
+...
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExNzQ2NTczLDE2MTQ0MzcyMzcsMTgzMT
+eyJoaXN0b3J5IjpbMTM4ODg3NjY4LDE2MTQ0MzcyMzcsMTgzMT
 U4NzQzMCw4Njc5NzM0MjAsLTE2NjUxMjExNCwtNjY0MDQ0Mjkx
 LC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5NTAsMzMwOT
 I0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQs
