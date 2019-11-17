@@ -407,9 +407,10 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 	* Load Balancer Port: 8443
 	* Select all the AZs and their corresponding public facing subnets within your VPC
 	* Create a new `target group`, Target type as 	`Instance`, TCP and port `8443`.
-	* Register all the master EC2 instance 
+	* Register all the master EC2 instances to the Target group.
+4. Update the DNS to advertise the newly created LB 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5MDkxMzgwLDEyMDEzOTUwNTcsMTYxND
+eyJoaXN0b3J5IjpbNjQ3ODM5NDcwLDEyMDEzOTUwNTcsMTYxND
 QzNzIzNywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0
 LC02NjQwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1ND
 czNDk1MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5Nzcs
