@@ -327,11 +327,11 @@ This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2
 
 The first step in deploying a cluster is to login to the pks api and selecting a plan. 
 ```console
-pks login -a api.pks.awscloud.navneetv.com -u cody -k
+pks login -a [pks_api_endpoint] -u cody -k
 ```
 ```shell
 Password: ********
-API Endpoint: api.pks.awscloud.navneetv.com
+API Endpoint: [pks_api_endpoint]
 User: cody
 Login successful.
 ```
@@ -346,14 +346,33 @@ small  8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a
 We will use the `small` plan in this example to create a cluster.  To do so execute the following command - 
 
 ```console
-pks create-cluster cluster00 --external-hostname cluster00.awscloud.navneetv.com  --plan small
+pks create-cluster cluster00 --external-hostname cluster00.subdomain.domain.com  --plan small
 ```
+
+```shell
+PKS Version:              1.5.1-build.8
+Name:                     cluster00
+K8s Version:              1.14.6
+Plan Name:                small
+UUID:                     850bbd0a-1786-4473-86c2-5e46d5e0b9cd
+Last Action:              CREATE
+Last Action State:        in progress
+Last Action Description:  Creating cluster
+Kubernetes Master Host:   cluster00.subdomain.domain.com
+Kubernetes Master Port:   8443
+Worker Nodes:             3
+Kubernetes Master IP(s):  In Progress
+Network Profile Name:
+
+Use 'pks cluster cluster00' to monitor the state of your cluster
+```
+It takes around 15-20 mins for the cluster to get deployed. Once deployed, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzExNDU4NCwtMTY2NTEyMTE0LC02Nj
-QwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1
-MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMD
-UzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTky
-MzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNz
-QsNTQ3NTExMTExLDE0MjI2MzY4NDgsMzQ5MDYyOTM2LC0xNzkx
-MDYxNTczXX0=
+eyJoaXN0b3J5IjpbLTIwNzcxNTM3MjUsLTE2NjUxMjExNCwtNj
+Y0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5
+NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MT
+A1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5
+MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMD
+c0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5
+MTA2MTU3M119
 -->
