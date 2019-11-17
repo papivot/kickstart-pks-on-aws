@@ -585,8 +585,11 @@ Apply the yaml using kubectl.
 ```console
 kubectl apply k8soperations.yaml
 ```
+
+Wait for the deployment to be ready. It will probably take 3+ minutes for the pod to be ready 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTY3NTA2MSwtNjUyNzQ5ODAyLC0xOD
+eyJoaXN0b3J5IjpbMTczNDgxNTk5OCwtNjUyNzQ5ODAyLC0xOD
 AyMjAzMzksMzQyNTg3OTMsMTIwMTM5NTA1NywxNjE0NDM3MjM3
 LDE4MzE1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2ND
 A0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUw
