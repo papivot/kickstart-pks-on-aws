@@ -372,7 +372,7 @@ Perform the following steps before you create a load balancer:
 
 1.  In the  [AWS Management Console](https://aws.amazon.com/console/), create or locate a public subnet **for each** availability zone (AZ) that you are deploying to. A public subnet has a route table that directs internet-bound traffic to the internet gateway.
      
-4.  In the  [AWS Management Console](https://aws.amazon.com/console/), tag each public subnet based on the table below, replacing  `CLUSTER-UUID`  with the unique identifier of the cluster. Leave the  **Value**  field empty.
+4.  In the  [AWS Management Console](https://aws.amazon.com/console/), tag **each public subnet** based on the table below, replacing  `CLUSTER-UUID`  with the unique identifier of the cluster. Leave the  **Value**  field empty.
     
     Key
     
@@ -382,11 +382,11 @@ Perform the following steps before you create a load balancer:
     
     empty
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzNjAzNjM3LDE4MzE1ODc0MzAsODY3OT
-czNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5MSwtMzg1NTgxOTEx
-LC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMDkyNDE5MCw0ODIxMj
-YwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0LC0yMDE4MDcxOTAy
-LC0xMDgyNTk1NjQwLC0yMDAxOTIzNjEzLC0xOTA2MjMzMDk1LD
-E1MTIyNzU0MzAsLTQ1NjU5MTA3NCw1NDc1MTExMTEsMTQyMjYz
-Njg0OF19
+eyJoaXN0b3J5IjpbMTYxNDQzNzIzNywxODMxNTg3NDMwLDg2Nz
+k3MzQyMCwtMTY2NTEyMTE0LC02NjQwNDQyOTEsLTM4NTU4MTkx
+MSwtOTIzNTY5ODY0LDk1NDczNDk1MCwzMzA5MjQxOTAsNDgyMT
+I2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkw
+MiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NS
+wxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3NTExMTExLDE0MjI2
+MzY4NDhdfQ==
 -->
