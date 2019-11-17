@@ -587,13 +587,32 @@ kubectl apply k8soperations.yaml
 ```
 
 Wait for the deployment to be ready. It will probably take 3+ minutes for the pod to be ready 
+```console
+kubectl get all -n kube-ops
+```
+This should show an output similar to this - 
 
+```shell
+NAME                                  READY   STATUS    RESTARTS   AGE
+pod/k8s-operations-5b77c9f9d6-29g6c   1/1     Running   0          15m
+
+NAME                     TYPE           CLUSTER-IP       EXTERNAL-IP                                                            PORT(S)        AGE
+service/k8s-operations   LoadBalancer   10.100.200.141   abb23fb47098a11eaba9f02cca9a6605-8595748.us-east-2.elb.amazonaws.com   80:31285/TCP   15m
+
+NAME                             READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/k8s-operations   1/1     1            1           15m
+
+NAME                                        DESIRED   CURRENT   READY   AGE
+replicaset.apps/k8s-operations-5b77c9f9d6   1         1         1       15m
+```
+
+Curl the External
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDgxNTk5OCwtNjUyNzQ5ODAyLC0xOD
-AyMjAzMzksMzQyNTg3OTMsMTIwMTM5NTA1NywxNjE0NDM3MjM3
-LDE4MzE1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2ND
-A0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUw
-LDMzMDkyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNT
-MwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIz
-NjEzXX0=
+eyJoaXN0b3J5IjpbNTc3MTQ3Nzc3LC02NTI3NDk4MDIsLTE4MD
+IyMDMzOSwzNDI1ODc5MywxMjAxMzk1MDU3LDE2MTQ0MzcyMzcs
+MTgzMTU4NzQzMCw4Njc5NzM0MjAsLTE2NjUxMjExNCwtNjY0MD
+Q0MjkxLC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5NTAs
+MzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1Mz
+AyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2
+MTNdfQ==
 -->
