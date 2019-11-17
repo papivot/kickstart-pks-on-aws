@@ -409,12 +409,18 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 	* Create a new `target group`, Target type as 	`Instance`, TCP and port `8443`.
 	* Register all the master EC2 instances to the Target group.
 4. Update the DNS to advertise the newly created NW LB as an alias to the Kubernetes Master Host FQDN entered in the cluster creation stage. 
+
+Generate the Kubeconfig file for the user using the following command - 
+
+```console
+pks get-credentials cluster00
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQyNTg3OTMsMTIwMTM5NTA1NywxNjE0ND
-M3MjM3LDE4MzE1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQs
-LTY2NDA0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0Nz
-M0OTUwLDMzMDkyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3Nywx
-NjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMD
-AxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5
-MTA3NF19
+eyJoaXN0b3J5IjpbMTE0MzYxODIwNSwzNDI1ODc5MywxMjAxMz
+k1MDU3LDE2MTQ0MzcyMzcsMTgzMTU4NzQzMCw4Njc5NzM0MjAs
+LTE2NjUxMjExNCwtNjY0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMz
+U2OTg2NCw5NTQ3MzQ5NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwt
+ODczMzEyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwOD
+I1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3
+NTQzMF19
 -->
