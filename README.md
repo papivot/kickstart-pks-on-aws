@@ -433,14 +433,156 @@ ip-10-0-9-5.us-east-2.compute.internal    Ready    <none>   59m   v1.14.6
 
 ## Stage 2 - Deploy a workload
 
-Download a sample yaml file 
+Download the sample yaml file and save it as k8soperations.yaml
 
 ```yaml
-
-
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kube-ops
+  labels:
+    project.name: k8s-operations
+    project.app: k8s-operations
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: k8s-operations
+  namespace: kube-ops
+  labels:
+    project.name: k8s-operations
+    project.app: k8s-operations
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: k8s-operations
+  labels:
+    project.app: k8s-operations
+    project.name: k8s-operations
+rules:
+  - apiGroups:
+    - '*'
+    resources:
+    - '*'
+    verbs: ["get", "list", "watch"]
+  - nonResourceURLs:
+    - '*'
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: k8s-operations
+  labels:
+    project.app: k8s-operations
+    project.name: k8s-operations
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: k8s-operations
+subjects:
+- kind: ServiceAccount
+  name: k8s-operations
+  namespace: kube-ops
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: 'true'
+  labels:
+    project.app: k8s-operations
+    project.name: k8s-operations
+  name: k8s-operations
+  namespace: kube-ops
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    project.app: k8s-operations
+  type: LoadBalancer
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    project.name: k8s-operations
+    project.app: k8s-operations
+  name: k8s-operations
+  namespace: kube-ops
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      project.app: k8s-operations
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        project.app: k8s-operations
+    spec:
+      containers:
+      - env:
+        - name: CLUSTER_NAME
+          value: clustername.demo.local 
+        image: whoami6443/k8soper:0.0.6
+        imagePullPolicy: Always
+        name: k8s-operations
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi
+        readinessProbe:
+          httpGet:
+            path: /itam.txt
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        securityContext:
+          readOnlyRootFilesystem: true
+          allowPrivilegeEscalation: false
+          privileged: false
+          runAsNonRoot: false
+          #runAsNonRoot: true
+          #runAsUser: 9999
+        volumeMounts:
+        - mountPath: /user/k8soper
+          name: cache-volume
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        stdin: true
+        tty: true
+      volumes:
+      - name: cache-volume
+        emptyDir: {}
+      dnsPolicy: ClusterFirst
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: k8s-operations
+      serviceAccountName: k8s-operations
+      terminationGracePeriodSeconds: 30
 ```
+
+Apply the kubectl 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDUzMDc2ODQsLTY1Mjc0OTgwMiwtMT
+eyJoaXN0b3J5IjpbLTE0OTc1ODg4NjYsLTY1Mjc0OTgwMiwtMT
 gwMjIwMzM5LDM0MjU4NzkzLDEyMDEzOTUwNTcsMTYxNDQzNzIz
 NywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02Nj
 QwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1
