@@ -399,14 +399,15 @@ Last Action State:        succeeded
 Last Action Description:  Instance provisioning completed
 ...
 ```
+Once the cluster provisioning is complete, adjust the security groups on the master by performing the following steps -
 
-
+1.  In the  [AWS Management Console](https://aws.amazon.com/console/),
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODg3NjY4LDE2MTQ0MzcyMzcsMTgzMT
-U4NzQzMCw4Njc5NzM0MjAsLTE2NjUxMjExNCwtNjY0MDQ0Mjkx
-LC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5NTAsMzMwOT
-I0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MTA1MzAyMzQs
-LTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5MjM2MTMsLT
-E5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMDc0LDU0NzUx
-MTExMV19
+eyJoaXN0b3J5IjpbLTE3OTYzODg3MzksMTYxNDQzNzIzNywxOD
+MxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0LC02NjQwNDQy
+OTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1NDczNDk1MCwzMz
+A5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5NzcsMTYxMDUzMDIz
+NCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMjAwMTkyMzYxMy
+wtMTkwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1OTEwNzQsNTQ3
+NTExMTExXX0=
 -->
