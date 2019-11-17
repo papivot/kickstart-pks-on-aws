@@ -408,13 +408,13 @@ Once the cluster provisioning is complete, adjust the security groups on the mas
 	* Select all the AZs and their corresponding public facing subnets within your VPC
 	* Create a new `target group`, Target type as 	`Instance`, TCP and port `8443`.
 	* Register all the master EC2 instances to the Target group.
-4. Update the DNS to advertise the newly created LB 
+4. Update the DNS to advertise the newly created NW LB as an alias to the Kubernetes Master Host FQDN entered in the cluster creation stage. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ3ODM5NDcwLDEyMDEzOTUwNTcsMTYxND
-QzNzIzNywxODMxNTg3NDMwLDg2Nzk3MzQyMCwtMTY2NTEyMTE0
-LC02NjQwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNTY5ODY0LDk1ND
-czNDk1MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04NzMzMTI5Nzcs
-MTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4MjU5NTY0MCwtMj
-AwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1NDMwLC00NTY1
-OTEwNzRdfQ==
+eyJoaXN0b3J5IjpbMzQyNTg3OTMsMTIwMTM5NTA1NywxNjE0ND
+M3MjM3LDE4MzE1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQs
+LTY2NDA0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0Nz
+M0OTUwLDMzMDkyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3Nywx
+NjEwNTMwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMD
+AxOTIzNjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5
+MTA3NF19
 -->
