@@ -366,7 +366,10 @@ Network Profile Name:
 
 Use 'pks cluster cluster00' to monitor the state of your cluster
 ```
-It takes around 15-20 mins for the cluster to get deployed. Once deployed, we need to perform a quick AWS specific PKS fix on VPC. Copy the UUID of the cluster that is being deployed - `850bbd0a-1786-4473-86c2-5e46d5e0b9cd` in this example. 
+It takes around 15-20 mins for the cluster to get deployed. 
+
+#### AWS Prerequisites 
+Once deployed, we need to perform a quick AWS specific PKS fix on VPC. Copy the UUID of the cluster that is being deployed - `850bbd0a-1786-4473-86c2-5e46d5e0b9cd` in this example. 
 
 Perform the following steps before you create a load balancer:
 
@@ -374,13 +377,16 @@ Perform the following steps before you create a load balancer:
      
 4.  In the  [AWS Management Console](https://aws.amazon.com/console/), tag **each public subnet** based on the table below, replacing  `CLUSTER-UUID`  with the unique identifier of the cluster. Leave the  **Value**  field empty.
     
-    Key
+    ***Key***
     `kubernetes.io/cluster/service-instance_CLUSTER-UUID`
     
-    Value
+    ***Value***
    ` empty`
+
+---
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzkyNTcyOSwxNjE0NDM3MjM3LDE4Mz
+eyJoaXN0b3J5IjpbMTkyMDEyMTY5NCwxNjE0NDM3MjM3LDE4Mz
 E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
 MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
 kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
