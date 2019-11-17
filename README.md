@@ -321,9 +321,7 @@ This will destroy all the plumbing and OpsMan VM, that were created in **Stage 2
 ---
 # Running Workload on a PKS cluster
 
-## Stage 1
-
-## Deploy a cluster
+## Stage 1 - Deploy a cluster
 
 The first step in deploying a cluster is to login to the pks api and selecting a plan. 
 ```console
@@ -432,12 +430,16 @@ ip-10-0-10-5.us-east-2.compute.internal   Ready    <none>   57m   v1.14.6
 ip-10-0-8-6.us-east-2.compute.internal    Ready    <none>   61m   v1.14.6
 ip-10-0-9-5.us-east-2.compute.internal    Ready    <none>   59m   v1.14.6
 ```
+
+## Stage 2 - Deploy a workload
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4NzUxMDE4LDM0MjU4NzkzLDEyMDEzOT
-UwNTcsMTYxNDQzNzIzNywxODMxNTg3NDMwLDg2Nzk3MzQyMCwt
-MTY2NTEyMTE0LC02NjQwNDQyOTEsLTM4NTU4MTkxMSwtOTIzNT
-Y5ODY0LDk1NDczNDk1MCwzMzA5MjQxOTAsNDgyMTI2MDE4LC04
-NzMzMTI5NzcsMTYxMDUzMDIzNCwtMjAxODA3MTkwMiwtMTA4Mj
-U5NTY0MCwtMjAwMTkyMzYxMywtMTkwNjIzMzA5NSwxNTEyMjc1
-NDMwXX0=
+eyJoaXN0b3J5IjpbLTE4MDIyMDMzOSwzNDI1ODc5MywxMjAxMz
+k1MDU3LDE2MTQ0MzcyMzcsMTgzMTU4NzQzMCw4Njc5NzM0MjAs
+LTE2NjUxMjExNCwtNjY0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMz
+U2OTg2NCw5NTQ3MzQ5NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwt
+ODczMzEyOTc3LDE2MTA1MzAyMzQsLTIwMTgwNzE5MDIsLTEwOD
+I1OTU2NDAsLTIwMDE5MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3
+NTQzMF19
 -->
