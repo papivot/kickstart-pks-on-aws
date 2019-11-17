@@ -402,9 +402,9 @@ Last Action Description:  Instance provisioning completed
 Once the cluster provisioning is complete, adjust the security groups on the master by performing the following steps -
 
 1.  In the  [AWS Management Console](https://aws.amazon.com/console/), filter all the **master** EC2 instances. 
-2. Fora each master instance, `Action` -> `Networking`->`Change security groups`
+2. For each master instance, `Action` -> `Networking`->`Change security groups`. Select the `pks-master` security group and `Assign Security Groups`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTUyNzQ3MywxNjE0NDM3MjM3LDE4Mz
+eyJoaXN0b3J5IjpbMjA0MjExNjAxOSwxNjE0NDM3MjM3LDE4Mz
 E1ODc0MzAsODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2NDA0NDI5
 MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUwLDMzMD
 kyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNTMwMjM0
