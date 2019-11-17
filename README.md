@@ -343,7 +343,7 @@ Name   ID                                    Description
 small  8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 ```
 
-We will use the `small` plan in this example to create a cluster.  To do so execute the following command. The name of the cluster is cluster00 and the external FQDN for the API server will be  `cluster00.subdomain.domain.com`- 
+We will use the `small` plan in this example to create a cluster.  To do so execute the following command. The name of the cluster is `cluster00` and the external FQDN for the API server will be  `cluster00.subdomain.domain.com`- 
 
 ```console
 pks create-cluster cluster00 --external-hostname cluster00.subdomain.domain.com  --plan small
@@ -368,11 +368,11 @@ Use 'pks cluster cluster00' to monitor the state of your cluster
 ```
 It takes around 15-20 mins for the cluster to get deployed. Once deployed, we need to perform a quick AWS specific PKS fix on VPC.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM2NDc3MTIsLTE2NjUxMjExNCwtNj
-Y0MDQ0MjkxLC0zODU1ODE5MTEsLTkyMzU2OTg2NCw5NTQ3MzQ5
-NTAsMzMwOTI0MTkwLDQ4MjEyNjAxOCwtODczMzEyOTc3LDE2MT
-A1MzAyMzQsLTIwMTgwNzE5MDIsLTEwODI1OTU2NDAsLTIwMDE5
-MjM2MTMsLTE5MDYyMzMwOTUsMTUxMjI3NTQzMCwtNDU2NTkxMD
-c0LDU0NzUxMTExMSwxNDIyNjM2ODQ4LDM0OTA2MjkzNiwtMTc5
-MTA2MTU3M119
+eyJoaXN0b3J5IjpbODY3OTczNDIwLC0xNjY1MTIxMTQsLTY2ND
+A0NDI5MSwtMzg1NTgxOTExLC05MjM1Njk4NjQsOTU0NzM0OTUw
+LDMzMDkyNDE5MCw0ODIxMjYwMTgsLTg3MzMxMjk3NywxNjEwNT
+MwMjM0LC0yMDE4MDcxOTAyLC0xMDgyNTk1NjQwLC0yMDAxOTIz
+NjEzLC0xOTA2MjMzMDk1LDE1MTIyNzU0MzAsLTQ1NjU5MTA3NC
+w1NDc1MTExMTEsMTQyMjYzNjg0OCwzNDkwNjI5MzYsLTE3OTEw
+NjE1NzNdfQ==
 -->
