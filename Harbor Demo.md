@@ -236,22 +236,23 @@ Check the repository in Harbor UI and confirm that the v1 image has been uploade
 
 Now, we will update the docker container, create a new image, and upload it to Harbor:
 
-```shell
+```console
 docker run -t -d [Harbor_fqdn]/project-priv-a/centos7:v1
 docker ps
 ```
 
-This should return the ID of a running container. Grab that ID use it in the next command:
+This should return the ID of a running container. Grab that ID, use it in the next command:
 
-`docker exec -it cadf8ff0f00f bash`
-
+```console
+docker exec -it cadf8ff0f00f bash`
+```
 where `cadf8ff0f00f` was the ID of the running `centos7:v1` container. Within the container, update all the rpm binaries:
 
 `yum udpate -y`
 
 Once done, `exit` out of the container and grab the container ID:
 
-```
+```console
 exit
 docker ps
 docker commit cadf8ff0f00f [Harbor_fqdn]/project-priv-a/centos7:v2
@@ -275,7 +276,7 @@ Save.
 
 Now try to execute the v1 pod, that has a number of medium and high vulnerabilities.
 
-```shell
+```console
 kubectl run --generator=run-pod/v1 riskypod --image=[Harbor_fqdn]/project-priv-a/centos7:v1 -n default
 kubectl describe pod riskypod -n default
 ```
@@ -470,5 +471,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTU5NTExNiwxNDA2Mzc4NTM1XX0=
+eyJoaXN0b3J5IjpbLTc5MjAwNTIyMiwxNDA2Mzc4NTM1XX0=
 -->
