@@ -58,7 +58,7 @@ Login to the Harbor repository as `devuser01` and push both the images:
 
 If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trust a self signed cert on the repository and an exception needs to be made for the Harbor registry. To do so, as root, create / modify the file `/etc/docker/daemon.json` and add the following content:
 
-```console
+```shell
 {
   "insecure-registries" : ["harbor_fqdn"]
 }
@@ -469,5 +469,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDgwMzkxMzZdfQ==
+eyJoaXN0b3J5IjpbMTQwNjM3ODUzNV19
 -->
