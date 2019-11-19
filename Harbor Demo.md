@@ -155,24 +155,23 @@ This happened because the Docker daemon running on the worker nodes does not hav
 
 First, create a secret with the required credentials of `devuser01`:
 
-```shell
+```console
 kubectl create secret docker-registry priv-a-creds --docker-server=[Harbor_fqdn] --docker-username=devuser01 --docker-password=Passw0rd --docker-email=devuser01@domain.com -n default
 ```
-
 This creates the required secret:
 
-```console
+```shell
 secret/priv-a-creds created
 ```
 
 To view the secret, execute the following command:
 
-```shell
+```console
 kubectl get secret/priv-a-creds -o jsonpath='{.data.\.dockerconfigjson}' | base64 --decode; echo
 ```
 
 should display something like this:
-```console
+```shell
 {"auths":{"[Harbor_fqdn]":{"username":"devuser01","password":"Passw0rd","email":"devuser01@domain.com","auth":"ZGV2dXNlcjAxOlBhc3N3MHJk"}}}
 ```
 
@@ -199,14 +198,14 @@ spec:
 
 Copy the above yaml into a file named `auth.yml` and apply it:
 
-```shell
+```console
 kubectl apply -f auth.yml
 kubectl get pods -n default
 ```
 
 should show a successfully running pod:
 
-```console
+```shell
 NAME             READY   STATUS             RESTARTS   AGE
 alpine-auth      1/1     Running            0          8s
 alpine-no-auth   0/1     ImagePullBackOff   0          54m
@@ -227,7 +226,7 @@ We will look at Harbor's vulnerability for scanning and management capabilities 
 
 - Download an old Docker container, tag it and push it to Harbor:
 
-```shell
+```console
 docker image pull centos:centos7.2.1511
 docker tag centos:centos7.2.1511 [Harbor_fqdn]/project-priv-a/centos7:v1
 docker push [Harbor_fqdn]/project-priv-a/centos7:v1
@@ -471,5 +470,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzQwNzIxOSwxNDA2Mzc4NTM1XX0=
+eyJoaXN0b3J5IjpbMTQ1NTU5NTExNiwxNDA2Mzc4NTM1XX0=
 -->
