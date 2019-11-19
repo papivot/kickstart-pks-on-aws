@@ -335,27 +335,29 @@ docker exec -it 3655d9703e56 sh
 
 where `3655d9703e56` is the container id of the docker ps command output for the Alpine container.
 
-```shell
+```console
 apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*
 exit
 ```
 
-```shell
+```console
 docker ps
 docker commit 3655d9703e56 [Harbor_fqdn]/project-public-a/alpine:v2
 ```
 
 where `3655d9703e56` is the container id of the docker ps command output for the Alpine container.
 
-```
+```console
 export DOCKER_CONTENT_TRUST_SERVER=https://[Harbor_fqdn]:4443
 export DOCKER_CONTENT_TRUST=1
 ```
 
 Now when we push the image to the Harbor registry, the image will be signed and uploaded. This can be validated in the Harbor UI.
 
-`docker push [Harbor_fqdn]/project-public-a/alpine:v2`
 ```console
+docker push [Harbor_fqdn]/project-public-a/alpine:v2`
+```
+```shell
 The push refers to repository [[Harbor_fqdn]/project-public-a/alpine]
 d9f8178ae34c: Layer already exists
 256a7af3acb1: Layer already exists
@@ -368,9 +370,11 @@ Finished initializing "[Harbor_fqdn]/project-public-a/alpine"
 Successfully signed [Harbor_fqdn]/project-public-a/alpine:v2
 ```
 
-`docker trust inspect --pretty [Harbor_fqdn]/project-public-a/alpine`
-
 ```console
+docker trust inspect --pretty [Harbor_fqdn]/project-public-a/alpine`
+```
+
+```shell
 Signatures for [Harbor_fqdn]/project-public-a/alpine
 
 SIGNED TAG          DIGEST                                                             SIGNERS
@@ -471,5 +475,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MzYzNzg1OCwxNDA2Mzc4NTM1XX0=
+eyJoaXN0b3J5IjpbMzE0NjI2Mjc3LDE0MDYzNzg1MzVdfQ==
 -->
