@@ -121,32 +121,32 @@ spec:
   restartPolicy: Always
 ```
 
-```shell
+```console
 kubectl apply -f no-auth.yml
 kubectl get pods -n default
 ```
-
 should show an `ErrImagePull` status:
 
-```console
+```shell
 NAME             READY   STATUS         RESTARTS   AGE
 alpine-no-auth   0/1     ErrImagePull   0          69s
 ```
 
-`kubectl describe pod alpine-no-auth -n default`
-
+```console
+kubectl describe pod alpine-no-auth -n default`
+```
 should show the error message:
 
-```console
+```shell
 ...
 vents:
   Type     Reason     Age                From                                              Message
   ----     ------     ----               ----                                              -------
   Normal   Scheduled  87s                default-scheduler                                 Successfully assigned default/alpine-no-auth to vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c
-  Normal   Pulling    46s (x3 over 87s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1"
-  Warning  Failed     46s (x3 over 86s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1": rpc error: code = Unknown desc = Error response from daemon: pull access denied for harbor.pks.caracas.cf-app.com/project-priv-a/alpine, repository does not exist or may require 'docker login'
+  Normal   Pulling    46s (x3 over 87s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "[Harbor_fqdn]/project-priv-a/alpine:v1"
+  Warning  Failed     46s (x3 over 86s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "[Harbor_fqdn]/project-priv-a/alpine:v1": rpc error: code = Unknown desc = Error response from daemon: pull access denied for [Harbor_fqdn]/project-priv-a/alpine, repository does not exist or may require 'docker login'
   Warning  Failed     46s (x3 over 86s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ErrImagePull
-  Normal   BackOff    6s (x6 over 86s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1"
+  Normal   BackOff    6s (x6 over 86s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "[Harbor_fqdn]/project-priv-a/alpine:v1"
   Warning  Failed     6s (x6 over 86s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ImagePullBackOff
 
 ```
@@ -471,5 +471,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NzIxOTY5LDE0MDYzNzg1MzVdfQ==
+eyJoaXN0b3J5IjpbMTI2NzQwNzIxOSwxNDA2Mzc4NTM1XX0=
 -->
