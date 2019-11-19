@@ -405,32 +405,34 @@ spec:
 ```
 Copy the above yaml into a file names `signed.yml` and apply it:
 
-```shell
+```console
 kubectl apply -f signed.yml
 kubectl get pods -n default
 ```
 
 this should show an `alpine-signed-pod` running:
-```console
+```shell
 NAME                READY   STATUS             RESTARTS   AGE
 alpine-signed-pod   1/1     Running            0          6s
 ```
 
 We will now revoke the trust of the image and then try to schedule it on the K8s cluster:
 
-```shell
+```console
 kubectl delete pod alpine-signed-pod -n default
 docker trust revoke  [Harbor_fqdn]/project-public-a/alpine:v2
 ```
 
-```console
+```shell
 Enter passphrase for repository key with ID e6331d5:
 Successfully deleted signature for [Harbor_fqdn]/project-public-a/alpine:v2
 ```
 
-`docker trust inspect --pretty [Harbor_fqdn]/project-public-a/alpine`
-
 ```console
+docker trust inspect --pretty [Harbor_fqdn]/project-public-a/alpine`
+```
+
+```shell
 No signatures for [Harbor_fqdn]/project-public-a/alpine
 
 Administrative keys for [Harbor_fqdn]/project-public-a/alpine
@@ -441,12 +443,12 @@ Administrative keys for [Harbor_fqdn]/project-public-a/alpine
 
 Harbor UI should now show that `alpine:v2` image is no longer signed.
 
-```
+```console
 kubectl apply -f signed.yml
 kubectl describe pods alpine-signed-pod
 ```
 
-```console
+```shell
 ...
 Events:
   Type     Reason     Age               From                                              Message
@@ -475,5 +477,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NjI2Mjc3LDE0MDYzNzg1MzVdfQ==
+eyJoaXN0b3J5IjpbLTIxMDk0MTE3MTksMTQwNjM3ODUzNV19
 -->
