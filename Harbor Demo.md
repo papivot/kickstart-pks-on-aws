@@ -19,7 +19,7 @@
 - Download the `alpine` container image from Dockerhub
 
 ```console
-docker pull alpine`
+docker pull alpine
 ```
 ```shell
 Using default tag: latest
@@ -30,7 +30,7 @@ Status: Downloaded newer image for alpine:latest
 ```
 
 ```console
-docker images`
+docker images
 ```
 ```shell
 REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
@@ -54,7 +54,9 @@ alpine                                                latest              4d9054
 
 Login to the Harbor repository as `devuser01` and push both the images:
 
-`docker login [Harbor_fqdn] -u devuser01`
+```console
+docker login [Harbor_fqdn] -u devuser01
+```
 
 If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trust a self signed cert on the repository and an exception needs to be made for the Harbor registry. To do so, as root, create / modify the file `/etc/docker/daemon.json` and add the following content:
 
@@ -70,7 +72,7 @@ Login Succeeded
 ```
 
 ```console
-docker push [Harbor_fqdn]/project-priv-a/alpine:v1`
+docker push [Harbor_fqdn]/project-priv-a/alpine:v1
 ```
 should successfully complete.
 
