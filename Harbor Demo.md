@@ -283,16 +283,16 @@ kubectl describe pod riskypod -n default
 
 This should show that the Pod was unable to be scheduled:
 
-```console
+```shell
 ...
 Events:
   Type     Reason     Age                From                                              Message
   ----     ------     ----               ----                                              -------
   Normal   Scheduled  33s                default-scheduler                                 Successfully assigned default/riskypod to vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c
-  Normal   Pulling    21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/centos7:v1"
-  Warning  Failed     21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "harbor.pks.caracas.cf-app.com/project-priv-a/centos7:v1": rpc error: code = Unknown desc = Error response from daemon: unknown: The severity of vulnerability of the image: "high" is equal or higher than the threshold in project setting: "medium".
+  Normal   Pulling    21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "[Harbor-fqdn]/project-priv-a/centos7:v1"
+  Warning  Failed     21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "[Harbor-fqdn]/project-priv-a/centos7:v1": rpc error: code = Unknown desc = Error response from daemon: unknown: The severity of vulnerability of the image: "high" is equal or higher than the threshold in project setting: "medium".
   Warning  Failed     21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ErrImagePull
-  Normal   BackOff    7s (x2 over 32s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/centos7:v1"
+  Normal   BackOff    7s (x2 over 32s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "[Harbor-fqdn]/project-priv-a/centos7:v1"
   Warning  Failed     7s (x2 over 32s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ImagePullBackOff
 ```
 
@@ -304,7 +304,7 @@ Within the Harbor UI, navigate to `Projects -> project-public-a -> Configuration
 
 Within the Harbor UI, navigate to `Projects -> project-public-a -> Repositories` and download the `Registry Certificate`.
 
-On the Linux jumpbox that has the Docker daemon running copy the downloaded certificate:
+On the Linux jumpbox that has the Docker daemon running, copy the downloaded certificate:
 ```shell
 mkdir ~/.docker/tls/[Harbor_fqdn]\:4443
 cp ca.crt ~/.docker/tls/[Harbor_fqdn]\:4443
@@ -471,5 +471,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjAwNTIyMiwxNDA2Mzc4NTM1XX0=
+eyJoaXN0b3J5IjpbLTExMTE0MzkwNDEsMTQwNjM3ODUzNV19
 -->
