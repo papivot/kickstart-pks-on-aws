@@ -48,8 +48,8 @@ docker images
 ```shell
 REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
 alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
-[Harbor_fqdn]/project-priv-a/alpine   v1                  4d90542f0623        3 weeks ago         5.58MB
-[Harbor_fqdn]/project-priv-b/alpine
+[Harbor_fqdn]/project-priv-a/alpine                   v1                  4d90542f0623        3 weeks ago         5.58MB
+[Harbor_fqdn]/project-priv-b/alpine                   v1                  4d90542f0623        3 weeks ago         5.58MB
 ```
 
 Login to the Harbor repository as `devuser01` and push both the images:
@@ -469,5 +469,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjg5NDA5MzhdfQ==
+eyJoaXN0b3J5IjpbLTIxMDgwMzkxMzZdfQ==
 -->
