@@ -39,13 +39,13 @@ alpine                                                latest              4d9054
 
 Tag the image appropriately:
 
-```
+```console
 docker tag alpine [Harbor_fqdn]/project-priv-a/alpine:v1
 docker tag alpine [Harbor_fqdn]/project-priv-b/alpine:v1
 docker images
 ```
 
-```console
+```shell
 REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
 alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
 [Harbor_fqdn]/project-priv-a/alpine   v1                  4d90542f0623        3 weeks ago         5.58MB
@@ -469,5 +469,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwNDk5MzI0XX0=
+eyJoaXN0b3J5IjpbLTE1Mjg5NDA5MzhdfQ==
 -->
