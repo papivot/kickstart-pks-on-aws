@@ -305,29 +305,29 @@ Within the Harbor UI, navigate to `Projects -> project-public-a -> Configuration
 Within the Harbor UI, navigate to `Projects -> project-public-a -> Repositories` and download the `Registry Certificate`.
 
 On the Linux jumpbox that has the Docker daemon running, copy the downloaded certificate:
-```shell
+```console
 mkdir ~/.docker/tls/[Harbor_fqdn]\:4443
 cp ca.crt ~/.docker/tls/[Harbor_fqdn]\:4443
 ```
 
 Download an alpine container from Dockerhub and upload v1 without trust enabled:
-```shell
+```console
 docker pull alpine
-docker login harbor.pks.caracas.cf-app.com -u admin
+docker login [Harbor_fqdn] -u admin
 ```
 
-```console
+```shell
 Login Succeeded
 ```
 
-```shell
+```console
 docker tag alpine [Harbor_fqdn]/project-public-a/alpine:v1
 docker push [Harbor_fqdn]/project-public-a/alpine:v1
 ```
 
 Modify the `apline:v1` docker image by running a package update on it. After that we will enable Trust and upload the image to Harbor as v2:
 
-```shell
+```console
 docker run -t -d [Harbor_fqdn]/project-public-a/alpine:v1
 docker ps
 docker exec -it 3655d9703e56 sh
@@ -471,5 +471,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTE0MzkwNDEsMTQwNjM3ODUzNV19
+eyJoaXN0b3J5IjpbLTU2MzYzNzg1OCwxNDA2Mzc4NTM1XX0=
 -->
