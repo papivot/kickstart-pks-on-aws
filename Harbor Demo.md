@@ -18,9 +18,10 @@
 - Login to a workstation that has Docker installed
 - Download the `alpine` container image from Dockerhub
 
-`docker pull alpine`
-
 ```console
+docker pull alpine`
+```
+```shell
 Using default tag: latest
 latest: Pulling from library/alpine
 921b31ab772b: Pull complete
@@ -28,14 +29,15 @@ Digest: sha256:ca1c944a4f8486a153024d9965aafbe24f5723c1d5c02f4964c045a16d19dc54
 Status: Downloaded newer image for alpine:latest
 ```
 
-`docker images`
-
 ```console
+docker images`
+```
+```shell
 REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
 alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
 ```
 
-Tag the image appropriatly:
+Tag the image appropriately:
 
 ```
 docker tag alpine [Harbor_fqdn]/project-priv-a/alpine:v1
@@ -467,5 +469,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgxNDEyMDFdfQ==
+eyJoaXN0b3J5IjpbMjYwNDk5MzI0XX0=
 -->
