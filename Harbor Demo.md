@@ -58,32 +58,34 @@ Login to the Harbor repository as `devuser01` and push both the images:
 
 If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trust a self signed cert on the repository and an exception needs to be made for the Harbor registry. To do so, as root, create / modify the file `/etc/docker/daemon.json` and add the following content:
 
-```shell
+```json
 {
   "insecure-registries" : ["harbor_fqdn"]
 }
 ```
 A service restart of docker daemon is required. Once completed, retry the login command once again. This time, a successful login message should be displayed:
 
-```console
+```shell
 Login Succeeded
 ```
 
-`docker push [Harbor_fqdn]/project-priv-a/alpine:v1`
-
+```console
+docker push [Harbor_fqdn]/project-priv-a/alpine:v1`
+```
 should successfully complete.
 
-```console
+```shell
 The push refers to repository [[Harbor_fqdn]/project-priv-a/alpine]
 256a7af3acb1: Pushed
 v1: digest: sha256:97a042bf09f1bf78c8cf3dcebef94614f2b95fa2f988a5c07314031bc2570c7a size: 528
 ```
 
-`docker push [Harbor_fqdn]/project-priv-b/alpine:v1`
-
+```console
+docker push [Harbor_fqdn]/project-priv-b/alpine:v1`
+```
 should fail.
 
-```console
+```shell
 The push refers to repository [[Harbor_fqdn]/project-priv-b/alpine]
 256a7af3acb1: Preparing
 denied: requested access to the resource is denied
@@ -91,7 +93,7 @@ denied: requested access to the resource is denied
 
 Login as `devuser02` and push the image `alpine:v1` to `project-priv-b`:
 
-```shell
+```console
 docker login [Harbor_fqdn] -u devuser02
 docker push [Harbor_fqdn]/project-priv-b/alpine:v1
 ```
@@ -469,5 +471,5 @@ Use `docker rmi [image_Id]` to remove all the images from the jumpbox.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjM3ODUzNV19
+eyJoaXN0b3J5IjpbMzQ1NzIxOTY5LDE0MDYzNzg1MzVdfQ==
 -->
